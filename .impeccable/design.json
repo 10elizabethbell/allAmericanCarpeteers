@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T15:46:52+00:00",
+  "title": "Design System: All American Carpeteers LLC",
+  "extensions": {
+    "colorMeta": {
+      "flag-navy": {
+        "role": "primary",
+        "displayName": "Flag Navy",
+        "tonalRamp": [
+          "oklch(15% 0.103 260.5)",
+          "oklch(27% 0.103 260.5)",
+          "oklch(39% 0.103 260.5)",
+          "oklch(51% 0.103 260.5)",
+          "oklch(63% 0.103 260.5)",
+          "oklch(75% 0.103 260.5)",
+          "oklch(87% 0.103 260.5)",
+          "oklch(95% 0.103 260.5)"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Deep Navy",
+        "tonalRamp": [
+          "oklch(15% 0.085 260.5)",
+          "oklch(27% 0.085 260.5)",
+          "oklch(39% 0.085 260.5)",
+          "oklch(51% 0.085 260.5)",
+          "oklch(63% 0.085 260.5)",
+          "oklch(75% 0.085 260.5)",
+          "oklch(87% 0.085 260.5)",
+          "oklch(95% 0.085 260.5)"
+        ]
+      },
+      "flag-red": {
+        "role": "secondary",
+        "displayName": "Flag Red",
+        "tonalRamp": [
+          "oklch(15% 0.207 22.3)",
+          "oklch(27% 0.207 22.3)",
+          "oklch(39% 0.207 22.3)",
+          "oklch(51% 0.207 22.3)",
+          "oklch(63% 0.207 22.3)",
+          "oklch(75% 0.207 22.3)",
+          "oklch(87% 0.207 22.3)",
+          "oklch(95% 0.207 22.3)"
+        ]
+      },
+      "red-deep": {
+        "role": "secondary",
+        "displayName": "Deep Red",
+        "tonalRamp": [
+          "oklch(15% 0.179 21.9)",
+          "oklch(27% 0.179 21.9)",
+          "oklch(39% 0.179 21.9)",
+          "oklch(51% 0.179 21.9)",
+          "oklch(63% 0.179 21.9)",
+          "oklch(75% 0.179 21.9)",
+          "oklch(87% 0.179 21.9)",
+          "oklch(95% 0.179 21.9)"
+        ]
+      },
+      "wall-cream": {
+        "role": "neutral",
+        "displayName": "Wall Cream",
+        "tonalRamp": [
+          "oklch(15% 0.014 84.6)",
+          "oklch(27% 0.014 84.6)",
+          "oklch(39% 0.014 84.6)",
+          "oklch(51% 0.014 84.6)",
+          "oklch(63% 0.014 84.6)",
+          "oklch(75% 0.014 84.6)",
+          "oklch(87% 0.014 84.6)",
+          "oklch(95% 0.014 84.6)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.007 88.6)",
+          "oklch(27% 0.007 88.6)",
+          "oklch(39% 0.007 88.6)",
+          "oklch(51% 0.007 88.6)",
+          "oklch(63% 0.007 88.6)",
+          "oklch(75% 0.007 88.6)",
+          "oklch(87% 0.007 88.6)",
+          "oklch(95% 0.007 88.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.031 262.7)",
+          "oklch(27% 0.031 262.7)",
+          "oklch(39% 0.031 262.7)",
+          "oklch(51% 0.031 262.7)",
+          "oklch(63% 0.031 262.7)",
+          "oklch(75% 0.031 262.7)",
+          "oklch(87% 0.031 262.7)",
+          "oklch(95% 0.031 262.7)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "tonalRamp": [
+          "oklch(15% 0.035 264.1)",
+          "oklch(27% 0.035 264.1)",
+          "oklch(39% 0.035 264.1)",
+          "oklch(51% 0.035 264.1)",
+          "oklch(63% 0.035 264.1)",
+          "oklch(75% 0.035 264.1)",
+          "oklch(87% 0.035 264.1)",
+          "oklch(95% 0.035 264.1)"
+        ]
+      },
+      "pile-oatmeal": {
+        "role": "neutral",
+        "displayName": "Pile Oatmeal",
+        "tonalRamp": [
+          "oklch(15% 0.033 82.8)",
+          "oklch(27% 0.033 82.8)",
+          "oklch(39% 0.033 82.8)",
+          "oklch(51% 0.033 82.8)",
+          "oklch(63% 0.033 82.8)",
+          "oklch(75% 0.033 82.8)",
+          "oklch(87% 0.033 82.8)",
+          "oklch(95% 0.033 82.8)"
+        ]
+      },
+      "rule-cream": {
+        "role": "neutral",
+        "displayName": "Rule Cream",
+        "tonalRamp": [
+          "oklch(15% 0.02 84.6)",
+          "oklch(27% 0.02 84.6)",
+          "oklch(39% 0.02 84.6)",
+          "oklch(51% 0.02 84.6)",
+          "oklch(63% 0.02 84.6)",
+          "oklch(75% 0.02 84.6)",
+          "oklch(87% 0.02 84.6)",
+          "oklch(95% 0.02 84.6)"
+        ]
+      },
+      "arrow-well": {
+        "role": "neutral",
+        "displayName": "Arrow Well",
+        "tonalRamp": [
+          "oklch(15% 0.017 84.6)",
+          "oklch(27% 0.017 84.6)",
+          "oklch(39% 0.017 84.6)",
+          "oklch(51% 0.017 84.6)",
+          "oklch(63% 0.017 84.6)",
+          "oklch(75% 0.017 84.6)",
+          "oklch(87% 0.017 84.6)",
+          "oklch(95% 0.017 84.6)"
+        ]
+      },
+      "on-navy": {
+        "role": "neutral",
+        "displayName": "On-Navy",
+        "tonalRamp": [
+          "oklch(15% 0.014 264.5)",
+          "oklch(27% 0.014 264.5)",
+          "oklch(39% 0.014 264.5)",
+          "oklch(51% 0.014 264.5)",
+          "oklch(63% 0.014 264.5)",
+          "oklch(75% 0.014 264.5)",
+          "oklch(87% 0.014 264.5)",
+          "oklch(95% 0.014 264.5)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(39% 0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(87% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero slogan 'We clean it.' only."
+      },
+      "slogan-lead": {
+        "displayName": "Slogan Lead",
+        "purpose": "Red italic condensed first half of the slogan; also Vincent's signature on navy."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings; place name and closing line run oversize."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service group names with a 2px navy rule."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Red step counters in How it works."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Opening paragraph of a section."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text."
+      },
+      "row": {
+        "displayName": "Row",
+        "purpose": "Service row labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Owner role line and flyer tagline only; never above a heading."
+      }
+    },
+    "shadows": [
+      {
+        "name": "baseboard-cast",
+        "value": "0 5px 7px -2px rgba(60,45,25,.28)",
+        "purpose": "Baseboard onto the floor."
+      },
+      {
+        "name": "runner-cast",
+        "value": "0 3px 5px -1px rgba(60,45,25,.3)",
+        "purpose": "Under each runner strip."
+      },
+      {
+        "name": "red-glow",
+        "value": "0 6px 16px -6px rgba(200,16,46,.55)",
+        "purpose": "Primary button only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-color",
+        "value": ".18s ease",
+        "purpose": "Button and arrow color changes."
+      },
+      {
+        "name": "ease-press",
+        "value": ".18s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Button press: translateY(1px) scale(.99)."
+      },
+      {
+        "name": "ease-arrow",
+        "value": ".25s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Service-row arrow slides 3px right."
+      },
+      {
+        "name": "hint-fade",
+        "value": ".6s ease",
+        "purpose": "Drag hint fades 1.5s after first touch on the floor."
+      },
+      {
+        "name": "carpet-CFG",
+        "value": "CELL 4, DPR_MAX 1.5, WAND_W 124, AUTO_SPEED 280, IDLE_MS 2200, REGROW 0.006, DRY_S 2.6, NAP_RELAX 0.012, RUNNER_RELAX 0.07, BRUSH_R 26",
+        "purpose": "Tunable constants of the carpet simulation (see DESIGN.md Components)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs-max",
+        "value": "359px"
+      },
+      {
+        "name": "sm",
+        "value": "600px"
+      },
+      {
+        "name": "lg",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one red door: Text for a quote. One per view.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z\"/></svg>Text for a quote</a>",
+      "css": ":host{--navy:#14346b;--navy-deep:#0e2752;--red:#c8102e;--red-deep:#a50d26;--wall:#f6f1e7;--paper:#fffdf8;--ink:#1c2433;--ink-soft:#4a5468;--display:\"Avenir Next Condensed\",\"Arial Narrow\",\"sans-serif-condensed\",system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;min-width:230px;padding:0 26px;border-radius:12px;border:2px solid var(--navy);font:800 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s cubic-bezier(.2,.8,.2,1)} .ds-btn:active{transform:translateY(1px) scale(.99)} .ds-btn:focus-visible{outline:3px solid var(--red);outline-offset:3px} .ds-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .ds-btn-primary{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 6px 16px -6px rgba(200,16,46,.55)} .ds-btn-primary:hover{background:var(--red-deep);border-color:var(--red-deep)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Every non-quote button: navy outline, fills navy on hover.",
+      "html": "<a class=\"ds-btn ds-btn-ghost\" href=\"#\">What we clean</a>",
+      "css": ":host{--navy:#14346b;--navy-deep:#0e2752;--red:#c8102e;--red-deep:#a50d26;--wall:#f6f1e7;--paper:#fffdf8;--ink:#1c2433;--ink-soft:#4a5468;--display:\"Avenir Next Condensed\",\"Arial Narrow\",\"sans-serif-condensed\",system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;min-width:230px;padding:0 26px;border-radius:12px;border:2px solid var(--navy);font:800 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s cubic-bezier(.2,.8,.2,1)} .ds-btn:active{transform:translateY(1px) scale(.99)} .ds-btn:focus-visible{outline:3px solid var(--red);outline-offset:3px} .ds-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .ds-btn-ghost{background:transparent;color:var(--navy)} .ds-btn-ghost:hover{background:var(--navy);color:#fff}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "phone-link",
+      "description": "Static header on the cream wall: star wordmark left, phone number top-right. No menu, never sticky.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><defs><clipPath id=\"ds-sc\"><path d=\"M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z\"/></clipPath></defs><path d=\"M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z\" fill=\"#14346b\"/><g clip-path=\"url(#ds-sc)\"><path d=\"M-4 50L40 30v8L-4 58z\" fill=\"#fff\"/><path d=\"M-4 60L44 38v9L-4 68z\" fill=\"#c8102e\"/></g></svg><span><b>All American</b><b>Carpeteers<small>LLC</small></b></span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z\"/></svg>973-978-9516</a></header>",
+      "css": ":host{--navy:#14346b;--navy-deep:#0e2752;--red:#c8102e;--red-deep:#a50d26;--wall:#f6f1e7;--paper:#fffdf8;--ink:#1c2433;--ink-soft:#4a5468;--display:\"Avenir Next Condensed\",\"Arial Narrow\",\"sans-serif-condensed\",system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding:6px 20px 0;background:var(--wall)} .ds-brand{display:flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;color:var(--navy)} .ds-brand svg{width:38px;height:38px} .ds-brand b{display:block;font-family:var(--display);font-stretch:condensed;font-weight:800;text-transform:uppercase;font-size:17px;line-height:.92;letter-spacing:.01em} .ds-brand small{font-size:.62em;letter-spacing:.06em;margin-left:2px} .ds-tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;font-family:var(--display);font-stretch:condensed;font-weight:800;font-size:19px;color:var(--navy);text-decoration:none;white-space:nowrap} .ds-tel svg{width:19px;height:19px;fill:none;stroke:var(--red);stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .ds-tel:hover{color:var(--red)} .ds-tel:focus-visible,.ds-brand:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Tappable service row that texts a quote; on hover or focus only the arrow changes.",
+      "html": "<div class=\"ds-group\"><h3>Carpet &amp; fabric</h3><a class=\"ds-row\" href=\"#\">Carpet &amp; area rugs<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a><a class=\"ds-row\" href=\"#\"><span>Upholstery<small>Sofas, sectionals, chairs</small></span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ":host{--navy:#14346b;--navy-deep:#0e2752;--red:#c8102e;--red-deep:#a50d26;--wall:#f6f1e7;--paper:#fffdf8;--ink:#1c2433;--ink-soft:#4a5468;--display:\"Avenir Next Condensed\",\"Arial Narrow\",\"sans-serif-condensed\",system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-group{background:var(--paper);padding:20px;max-width:520px} .ds-group h3{margin:0;padding-bottom:10px;border-bottom:2px solid var(--navy);font-family:var(--display);font-stretch:condensed;font-weight:800;text-transform:uppercase;font-size:22px;line-height:.95;color:var(--navy)} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:60px;padding:8px 0;border-bottom:1px solid #e6dfd1;text-decoration:none;color:var(--ink);font:600 18px/1.3 var(--body)} .ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none} .ds-row small{display:block;font-weight:400;font-size:15px;color:var(--ink-soft);margin-top:1px} .ds-arrow{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;background:#ece6da;color:var(--navy);transition:background-color .18s ease,color .18s ease,transform .25s cubic-bezier(.2,.8,.2,1)} .ds-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:var(--red);color:#fff;transform:translateX(3px)} .ds-row:focus-visible .ds-arrow{outline:3px solid var(--red);outline-offset:3px}"
+    },
+    {
+      "name": "Hero Slogan",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "The two-part slogan: red italic condensed lead-in over the navy display line.",
+      "html": "<h1 class=\"ds-slogan\"><span class=\"ds-a\">If you walk or sit on it,</span><span class=\"ds-b\">We clean it.</span></h1>",
+      "css": ":host{--navy:#14346b;--navy-deep:#0e2752;--red:#c8102e;--red-deep:#a50d26;--wall:#f6f1e7;--paper:#fffdf8;--ink:#1c2433;--ink-soft:#4a5468;--display:\"Avenir Next Condensed\",\"Arial Narrow\",\"sans-serif-condensed\",system-ui,sans-serif;--body:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-slogan{margin:0;padding:18px 20px;background:var(--wall);font-family:var(--display);font-stretch:condensed;font-weight:800;text-transform:uppercase;letter-spacing:.005em;text-wrap:balance} .ds-a{display:block;font-style:italic;font-weight:700;text-transform:none;color:var(--red);font-size:clamp(25px,7.4vw,40px);line-height:1.05;letter-spacing:0} .ds-b{display:block;font-size:clamp(64px,12vw,120px);line-height:.88;color:var(--navy);margin-top:4px}"
+    },
+    {
+      "name": "Room Stack (wall, baseboard, floor)",
+      "kind": "custom",
+      "description": "Static stand-in for the signature: cream wall, 18px baseboard with warm cast, oatmeal floor where the canvas carpet runs.",
+      "html": "<div class=\"ds-room\"><div class=\"ds-wall\"></div><div class=\"ds-board\"></div><div class=\"ds-floor\"></div></div>",
+      "css": ".ds-room{width:100%;max-width:560px} .ds-wall{height:80px;background:#f6f1e7} .ds-board{position:relative;z-index:2;height:18px;background:linear-gradient(#fff 0,#fbf8f2 55%,#e9e2d4 100%);box-shadow:0 5px 7px -2px rgba(60,45,25,.28)} .ds-floor{height:180px;background:repeating-linear-gradient(90deg,#d3c7b1 0 80px,#ddd2bd 80px 160px)}"
+    },
+    {
+      "name": "Carpet Runner",
+      "kind": "custom",
+      "description": "Bound runner divider: 58px of pile between 7px navy bindings, warm cast shadow. Live version is a brushable canvas.",
+      "html": "<div class=\"ds-runner\"></div>",
+      "css": ".ds-runner{width:100%;max-width:560px;height:58px;background:repeating-linear-gradient(90deg,#d3c7b1 0 64px,#dfd5c2 64px 128px);border-top:7px solid #14346b;border-bottom:7px solid #14346b;box-shadow:0 3px 5px -1px rgba(60,45,25,.3)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Freshly Cleaned Room",
+    "overview": "The page is one room seen from the doorway: a warm cream wall at the top, a white baseboard, and wall-to-wall carpet below it. Everything above the baseboard is the business talking (who, the slogan, how to reach Vincent). Everything below is the trade itself, simulated: soiled pile that a steel cleaning wand works in pull strokes, each stripe laid down wet and drying bright, with the soil slowly creeping back so there is always more to clean. A finger or mouse can take the wand. Bound carpet runners recur between sections as the carried motion, so the room keeps going as you scroll.\n\nThe voice is a straightforward trades pitch with a patriotic sign-off. Flag navy and flag red come straight from the client's flyer and star mark; they sit on cream and paper, never on black. Type is heavy, condensed and uppercase for headings (the flyer's lettering, on a system font stack by house rule), with plain sentence-case body underneath. Density is phone-first: single column, large tap targets, every action a text message or call.\n\nDepth is physical rather than decorative: the baseboard and runners cast short warm shadows onto the floor, and the primary button carries a soft red glow. Nothing else floats.",
+    "keyCharacteristics": [
+      "Room composition at every width: wall above, baseboard, carpet floor below.",
+      "Flag navy + flag red on cream and paper; navy fields for the \"our voice\" section and footer.",
+      "Heavy condensed uppercase display, plain sentence-case body, system fonts only.",
+      "A live canvas carpet is the signature; runners repeat it as section dividers.",
+      "Texting is the main door: one filled red \"Text for a quote\" button, everything else outlined or text."
+    ],
+    "rules": [
+      {
+        "name": "The Cream Wall Rule",
+        "body": "Light surfaces are wall cream or paper; there is no dark mode and no black field. The darkest surface is deep navy, and only in the footer.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Red Door Rule",
+        "body": "Exactly one filled red button per view: \"Text for a quote\". Every other button is a navy ghost. Red elsewhere is small: numerals, star bullets, icons, hover and focus.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout and Say Rule",
+        "body": "Headings shout (condensed, 800, uppercase); everything else says (system body, sentence case). Nothing in between: no light display weights, no uppercase body paragraphs.",
+        "section": "typography"
+      },
+      {
+        "name": "The House Fonts Rule",
+        "body": "No webfonts. Display and body are system stacks by Ellie's pitch-site rules; the condensed character comes from `font-stretch` and the stack order, not a download.",
+        "section": "typography"
+      },
+      {
+        "name": "The Room Order Rule",
+        "body": "Wall above, baseboard, carpet below, at every width. The floor is never moved beside the copy or cropped into a card.",
+        "section": "layout"
+      },
+      {
+        "name": "The Static Header Rule",
+        "body": "The header scrolls away with the page. No sticky bar, no floating call button; the reach-out moments are the hero, the service rows and the close.",
+        "section": "layout"
+      },
+      {
+        "name": "The Warm Shadow Rule",
+        "body": "Shadows are warm brown (rgb 60,45,25), short and soft, and only fall from room objects. Never grey, never hard-offset, never on content boxes.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the room order (wall, 18px baseboard, carpet floor) at every width, with the wand already working on first paint.",
+      "Do put the phone number top-right in the header once; repeat it lower only as a plain text link (close line, footer).",
+      "Do make every quote action a pre-filled `sms:` link to Vincent; reserve the filled red button for \"Text for a quote\".",
+      "Do set headings in the condensed display stack at 800, uppercase, navy (white on navy), and everything else in the system body stack in sentence case.",
+      "Do alternate wall cream, paper and navy section fields, and use bound runners as the dividers between them.",
+      "Do keep every tap target at least 44px tall; buttons 58px, rows 60px.",
+      "Do honor reduced motion with a still frame that still responds to the visitor's hand.",
+      "Do tune the carpet through `CFG`, not by editing the simulation math."
+    ],
+    "donts": [
+      "Don't add a sticky header, sticky call bar or floating action button.",
+      "Don't change a service row's background, border, outline or shadow on hover or focus; only the arrow changes.",
+      "Don't put black or dark-grey fields on the page; the darkest surface is deep navy in the footer.",
+      "Don't load webfonts; the system stacks are the house choice.",
+      "Don't use grey or hard-offset shadows, or shadows on content boxes; shadows fall only from the baseboard, runners, the wand and the one red button.",
+      "Don't put uppercase tracked labels above headings; the label style belongs only to the owner's role line and the flyer tagline.",
+      "Don't show before/after photos, reviews, prices or credentials that the business has not supplied."
+    ]
+  }
+}
