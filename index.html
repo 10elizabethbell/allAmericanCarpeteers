@@ -28,8 +28,8 @@
   --ink-soft:#4a5468;
   --base:#fff;
   --focus:#c8102e;
-  --display:"Avenir Next Condensed","Arial Narrow","Roboto Condensed","sans-serif-condensed",system-ui,sans-serif;
-  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --display:"Avenir Next Condensed","Arial Narrow","sans-serif-condensed",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
   --gutter:20px;
 }
 *{box-sizing:border-box}
@@ -43,7 +43,7 @@ img{max-width:100%;display:block}
 h1,h2,h3{font-family:var(--display);font-stretch:condensed;font-weight:800;text-transform:uppercase;letter-spacing:.005em;line-height:.95;margin:0;text-wrap:balance}
 h2{font-size:clamp(36px,10vw,64px);color:var(--navy)}
 h3{font-size:22px;color:var(--navy)}
-p{margin:0}
+p{margin:0;text-wrap:pretty}
 .icon{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 /* ---------- header ---------- */
@@ -74,18 +74,19 @@ p{margin:0}
 .hint .icon{width:18px;height:18px;color:var(--navy)}
 .hint.gone{opacity:0}
 .baseboard{position:relative;z-index:2;height:18px;background:linear-gradient(#fff 0,#fbf8f2 55%,#e9e2d4 100%);box-shadow:0 5px 7px -2px rgba(60,45,25,.28)}
-.floor{position:relative;height:clamp(270px,46svh,470px);background:#d3c7b1 repeating-linear-gradient(90deg,rgba(255,255,255,.12) 0 70px,rgba(0,0,0,.04) 70px 140px)}
+.floor{position:relative;height:clamp(270px,46svh,470px);background:#d3c7b1}
 .floor canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:none}
 
 /* ---------- runner divider (a bound carpet runner) ---------- */
-.runner{position:relative;height:58px;background:#d3c7b1;border-top:7px solid var(--navy);border-bottom:7px solid var(--navy)}
+.runner{position:relative;height:58px;background:#d3c7b1;border-top:7px solid var(--navy);border-bottom:7px solid var(--navy);box-shadow:0 3px 5px -1px rgba(60,45,25,.3)}
+.runner-bay{background:var(--paper);padding-bottom:44px}
+.nw{white-space:nowrap}
 .runner canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
 
 /* ---------- sections ---------- */
 section{padding:64px 0}
-.services{background:var(--paper)}
+.services{background:var(--paper);padding-bottom:44px}
 .svc-head{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
-.svc-head p{color:var(--ink-soft);max-width:34em}
 .groups{display:grid;gap:30px}
 .group h3{padding-bottom:10px;border-bottom:2px solid var(--navy)}
 .rows{list-style:none;margin:0;padding:0}
@@ -113,12 +114,12 @@ section{padding:64px 0}
 .steps{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:26px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start}
 .steps li::before{counter-increment:s;content:counter(s);grid-row:span 2;font-family:var(--display);font-stretch:condensed;font-weight:800;font-size:58px;line-height:.8;color:var(--red)}
-.steps b{font-size:19px;color:var(--navy)}
+.steps b{font-size:19px;color:var(--navy);text-wrap:balance}
 .steps span{color:var(--ink-soft)}
 
 .area{background:var(--paper)}
 .area .place{font-size:clamp(46px,14vw,104px);color:var(--navy);margin-top:6px}
-.area .place em{display:block;font-style:normal;font-size:.42em;color:var(--red);margin-top:8px}
+.area .place em{display:block;font-style:normal;font-size:clamp(22px,6vw,44px);color:var(--red);margin-top:8px}
 .area p{margin-top:18px;color:var(--ink-soft)}
 .area p a{display:inline-block;padding:11px 0;color:var(--navy);font-weight:700;text-underline-offset:3px}
 .area p a:hover{color:var(--red)}
@@ -134,7 +135,7 @@ section{padding:64px 0}
 footer{background:var(--navy-deep);color:#c9d3e8;padding:40px 0 calc(40px + env(safe-area-inset-bottom));font-size:16px}
 footer .wrap{display:grid;gap:22px}
 footer .brand{color:#fff}
-footer .tag{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9fb0d2;margin-top:6px}
+footer .tag{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#9fb0d2;margin-top:6px}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
 footer a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px}
 footer a:hover{color:#ffd0d8}
@@ -160,14 +161,21 @@ footer .fine{font-size:14px;color:#8f9fc0}
   .floor{height:clamp(320px,44svh,520px)}
   section{padding:96px 0}
   .svc-head{flex-direction:row;justify-content:space-between;align-items:end}
-  .groups{grid-template-columns:repeat(3,1fr);gap:40px}
+  .groups{display:block;columns:2;column-gap:56px}
+  .group{break-inside:avoid;margin-bottom:34px}
+  .services{padding-bottom:56px}
   .care .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
   .care .side{padding-top:8px}
   .points{margin-top:0}
   .how .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
   .steps{margin-top:6px}
-  .area .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:end}
+  .area .wrap{display:grid;grid-template-columns:1.8fr 1fr;gap:56px;align-items:end}
   footer .wrap{grid-template-columns:1.4fr 1fr 1fr;align-items:start}
+}
+@media (max-width:359px){
+  .tel .icon{display:none}
+  .tel{font-size:17px}
+  .brand svg{width:32px;height:32px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -186,7 +194,7 @@ STORY: who (wordmark + number) -> their own promise "If you walk or sit on it, w
   where -> close -> footer.
 FIRST VIEWPORT: header with phone top-right; slogan as the one focal point; one-line promise; Text for a quote
   (filled) + What we clean (outlined); the carpet with the wand already working below the baseboard.
-FORM: phone-first single column; room composition (wall above, baseboard, floor below) at every width;
+FORM: (concept roll skipped: unattended pitch-site build, world chosen from 6 trade worlds, runner-up in HANDOFF.md) phone-first single column; room composition (wall above, baseboard, floor below) at every width;
   heavy condensed uppercase display, plain sentence-case body; runners between sections as the carried motion.
 -->
 <header class="top">
@@ -204,7 +212,7 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
     <div class="wrap hero-copy">
       <h1><span class="slogan-a">If you walk or sit on it,</span><span class="slogan-b">We clean it.</span></h1>
       <div class="hero-side">
-      <p class="promise">Eco-friendly cleaning that leaves your home cleaner, fresher and healthier, from the carpet to the couch to the kitchen tile.</p>
+      <p class="promise">Eco-friendly cleaning that leaves your home cleaner, fresher and healthier.</p>
       <div>
         <div class="actions">
           <a class="btn btn-primary js-sms" data-msg="quote" href="sms:+19739789516"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z"/></svg>Text for a quote</a>
@@ -222,57 +230,56 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
     <div class="wrap">
       <div class="svc-head">
         <h2>What we clean</h2>
-        <p>Tap anything below to text us about it.</p>
       </div>
       <div class="groups">
         <div class="group">
           <h3>Carpet &amp; fabric</h3>
           <ul class="rows">
-            <li><a class="row js-sms" data-svc="carpet and area rug cleaning" href="sms:+19739789516">Carpet &amp; area rugs<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="upholstery cleaning" href="sms:+19739789516"><span>Upholstery<small>Sofas, sectionals, chairs</small></span><span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="outdoor furniture and cushion cleaning" href="sms:+19739789516">Outdoor furniture &amp; cushions<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="baby car seat and stroller cleaning" href="sms:+19739789516">Baby car seats &amp; strollers<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="cheerleader/gym mat cleaning" href="sms:+19739789516">Cheer &amp; gym mats<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="carpet and area rug cleaning" href="sms:+19739789516">Carpet &amp; area rugs<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="upholstery cleaning" href="sms:+19739789516"><span>Upholstery<small>Sofas, sectionals, chairs</small></span><span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="outdoor furniture and cushion cleaning" href="sms:+19739789516">Outdoor furniture &amp; cushions<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="baby car seat and stroller cleaning" href="sms:+19739789516">Baby car seats &amp; strollers<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="cheerleader/gym mat cleaning" href="sms:+19739789516">Cheer &amp; gym mats<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
           </ul>
         </div>
         <div class="group">
           <h3>Hard floors</h3>
           <ul class="rows">
-            <li><a class="row js-sms" data-svc="hardwood floor cleaning" href="sms:+19739789516">Hardwood floor cleaning<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="a hardwood screen and recoat" href="sms:+19739789516">Screen &amp; recoat<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="hardwood refinishing and custom staining" href="sms:+19739789516">Refinishing &amp; custom staining<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="tile and grout cleaning and sealing" href="sms:+19739789516">Tile &amp; grout cleaning &amp; sealing<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="basement and garage floor cleaning, sealing and painting" href="sms:+19739789516"><span>Basement &amp; garage floors<small>Cleaning, sealing, painting</small></span><span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="hardwood floor cleaning" href="sms:+19739789516">Hardwood floor cleaning<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="a hardwood screen and recoat" href="sms:+19739789516">Screen &amp; recoat<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="hardwood refinishing and custom staining" href="sms:+19739789516">Refinishing &amp; custom staining<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="tile and grout cleaning and sealing" href="sms:+19739789516">Tile &amp; grout cleaning &amp; sealing<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="basement and garage floor cleaning, sealing and painting" href="sms:+19739789516"><span>Basement &amp; garage floors<small>Cleaning, sealing, painting</small></span><span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
           </ul>
         </div>
         <div class="group">
           <h3>Businesses</h3>
           <ul class="rows">
-            <li><a class="row js-sms" data-svc="commercial cleaning" href="sms:+19739789516">Commercial cleaning<span class="arrow"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+            <li><a class="row js-sms" data-svc="commercial cleaning" href="sms:+19739789516">Commercial cleaning<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="runner" aria-hidden="true"><canvas class="js-runner"></canvas></div>
+  <div class="runner-bay"><div class="runner" aria-hidden="true"><canvas class="js-runner"></canvas></div></div>
 
   <section class="care">
     <div class="wrap">
       <div>
         <h2>We clean your home like it's our own.</h2>
-        <p class="lede">The couch is where your family sits. The rug is where the kids play. We take pride in quality workmanship and dependable service, and we use eco-friendly solutions, so what we leave behind is clean, fresh and safe to live on.</p>
+        <p class="lede">The couch is where your family sits and the rug is where the kids play, so we treat them that way. We take pride in quality workmanship and dependable service.</p>
       </div>
       <div class="side">
         <ul class="points">
           <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Eco-friendly, organic solutions</li>
           <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Deep low-moisture cleaning</li>
-          <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Stains and odors out, not covered up</li>
+          <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Removes dirt, stains and odors</li>
         </ul>
         <div class="sign">
           <span class="name">Vincent Morea</span>
           <span class="role">Owner / Operator</span>
-          <a class="btn btn-ghost fb" href="https://www.facebook.com/profile.php?id=100004055979808"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Find Vincent on Facebook</a>
+          <a class="btn btn-ghost fb" href="https://www.facebook.com/profile.php?id=100004055979808"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>See us on Facebook</a>
         </div>
       </div>
     </div>
@@ -282,9 +289,9 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
     <div class="wrap">
       <h2>How it works</h2>
       <ol class="steps">
-        <li><b>Text us what needs cleaning.</b><span>A quick photo and your town help us give you a real quote.</span></li>
-        <li><b>We text back a quote and a time.</b><span>No pressure, no runaround.</span></li>
-        <li><b>We come to you and get it clean.</b><span>Your carpet, couch or floor, done right in your home.</span></li>
+        <li><b>Call or text what needs cleaning.</b><span>A photo and your town help.</span></li>
+        <li><b>Get your quote.</b><span>Straight from Vincent, the owner.</span></li>
+        <li><b>We come to you and clean it.</b><span>Carpet, couch, tile or hardwood, right in your home.</span></li>
       </ol>
     </div>
   </section>
@@ -293,7 +300,7 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
 
   <section class="area">
     <div class="wrap">
-      <h2 class="place">Randolph, NJ<em>&amp; surrounding areas</em></h2>
+      <h2 class="place"><span class="nw">Randolph, NJ</span><em>&amp; surrounding areas</em></h2>
       <p>Not sure we come to your town? <a class="js-sms" data-msg="area" href="sms:+19739789516">Text us and ask.</a></p>
     </div>
   </section>
@@ -301,7 +308,6 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
   <section class="close">
     <div class="wrap">
       <h2>Let's get it clean.</h2>
-      <p>Text us what needs cleaning and your town, and we'll get back to you with a quote.</p>
       <div class="actions"><a class="btn btn-primary js-sms" data-msg="quote" href="sms:+19739789516"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z"/></svg>Text for a quote</a></div>
       <p class="or">or call <a href="tel:+19739789516">973-978-9516</a></p>
     </div>
@@ -349,10 +355,10 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
   var CFG = {
     CELL: 4,              // css px per simulation cell
     DPR_MAX: 1.5,
-    WAND_W: 76,           // wand head width, css px (phones scale down a bit)
+    WAND_W: 124,          // widest wand head, css px (about a fifth of the floor on phones)
     AUTO_SPEED: 280,      // px/s of the self-running wand
     IDLE_MS: 2200,        // after the finger leaves, the wand runs itself again
-    REGROW: 0.055,        // per second, soil creeping back once a stripe is dry
+    REGROW: 0.006,        // per second, soil creeping back once a stripe is dry
     DRY_S: 2.6,           // seconds for a wet stripe to dry
     NAP_RELAX: 0.012,     // per second, stripes fade very slowly
     RUNNER_RELAX: 0.07,
@@ -446,7 +452,7 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
     this.darkImg = this.dark.getContext('2d').createImageData(gw, gh);
     this.lightImg = this.light.getContext('2d').createImageData(gw, gh);
     for (var i = 0; i < N; i++) { this.lightImg.data[i * 4 + 3] = 255; this.darkImg.data[i * 4 + 3] = 255; }
-    this.wandW = Math.max(56, Math.min(CFG.WAND_W, w / 5));
+    this.wandW = Math.max(64, Math.min(CFG.WAND_W, w / 5.2));
     if (this.o.dirt) this.soil();
     if (this.o.prestripe) this.prestripe();
     if (this.o.wand) { this.head = { x: w * 0.12, y: h + 10 }; this.prev = { x: this.head.x, y: this.head.y }; this.auto = { dir: -1, side: 1 }; this.warm(); }
@@ -457,17 +463,19 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
   Carpet.prototype.soil = function () {
     var C = CFG.CELL, nz = makeNoise(this.seed * 13), r = rng(this.seed * 31), w = this.w, h = this.h;
     var stains = [];
-    for (var s = 0; s < Math.max(4, Math.round(w * h / 26000)); s++) stains.push({ x: r() * w, y: h * (0.2 + r() * 0.75), rad: 9 + r() * 22, k: 0.4 + r() * 0.4 });
+    for (var s = 0; s < Math.max(3, Math.round(w * h / 90000)); s++) stains.push({ x: r() * w, y: h * (0.2 + r() * 0.75), rad: 14 + r() * 26, k: 0.2 + r() * 0.22 });
     for (var gy = 0; gy < this.gh; gy++) for (var gx = 0; gx < this.gw; gx++) {
       var x = gx * C, y = gy * C, i = gy * this.gw + gx;
       var lane = Math.exp(-Math.pow((y - h * 0.62) / (h * 0.42), 2));
       var n = nz(x / 70, y / 70);
-      var d = smooth(0.36, 0.78, n * 0.8 + lane * 0.32) * 0.5;
+      var d = smooth(0.36, 0.78, n * 0.55 + lane * 0.5) * 0.5;
       for (var k = 0; k < stains.length; k++) {
-        var st = stains[k], dx = x - st.x, dy = y - st.y, dd = Math.sqrt(dx * dx + dy * dy) / (st.rad * (0.75 + nz(x / 12, y / 12) * 0.6));
+        var st = stains[k], dx = x - st.x, dy = y - st.y, lim = st.rad * 1.4;
+        if (dx > lim || dx < -lim || dy > lim || dy < -lim) continue;
+        var dd = Math.sqrt(dx * dx + dy * dy) / (st.rad * (0.75 + nz(x / 12, y / 12) * 0.6));
         if (dd < 1) d += (1 - dd * dd) * st.k;
       }
-      if (r() < 0.035) d += 0.25 + r() * 0.35;
+      if (r() < 0.01) d += 0.08 + r() * 0.14;
       d = Math.min(1, d);
       this.target[i] = d; this.dirt[i] = d;
     }
@@ -475,7 +483,7 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
 
   /* a clean carpet with soft alternating stripes already laid */
   Carpet.prototype.prestripe = function () {
-    var C = CFG.CELL, sw = 66, nz = makeNoise(this.seed * 5);
+    var C = CFG.CELL, sw = Math.max(44, this.w / 7), nz = makeNoise(this.seed * 5);
     for (var gy = 0; gy < this.gh; gy++) for (var gx = 0; gx < this.gw; gx++) {
       var x = gx * C + Math.sin(gy * C / 60) * 6 + (nz(gx / 9, gy / 9) - .5) * 14;
       this.nap[gy * this.gw + gx] = this.napBase[gy * this.gw + gx] = (Math.floor(x / sw) % 2 ? 0.7 : -0.6);
@@ -485,7 +493,9 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
   /* run the wand a few strokes before the first paint so stripes are already there */
   Carpet.prototype.warm = function () {
     if (reduce) { for (var k = 0; k < 420; k++) this.step(1 / 60, true); return; }
-    for (var j = 0; j < 190; j++) this.step(1 / 60, true);
+    // lay about 40% of the floor clean before the first paint
+    var n = Math.round(60 * (this.h / CFG.AUTO_SPEED) * Math.ceil(this.w * 0.4 / (this.wandW * 0.86)));
+    for (var j = 0; j < n; j++) this.step(1 / 60, true);
   };
 
   Carpet.prototype.clean = function (ax, ay, bx, by) {
@@ -526,7 +536,7 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
       for (var gy = y0; gy <= y1; gy++) for (var gx = x0; gx <= x1; gx++) {
         var dx = gx * C - px, dy = gy * C - py, d = Math.sqrt(dx * dx + dy * dy) / R;
         if (d >= 1) continue;
-        var k = (1 - d * d) * 0.35, i = gy * gw + gx;
+        var k = (1 - d * d) * 0.15, i = gy * gw + gx;
         this.nap[i] += (napT - this.nap[i]) * k;
       }
     }
@@ -536,11 +546,12 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
   Carpet.prototype.autoTarget = function (dt) {
     var a = this.auto, h = this.head, W = this.wandW;
     if (a.col == null) a.col = h.x;
+    if (a.lift > 0) { a.lift -= dt; h.x += (a.col - h.x) * Math.min(1, dt * 16); return; }  // wand lifted while it side-steps
     var top = 26, bottom = this.h + 4;
-    h.y += a.dir * CFG.AUTO_SPEED * dt;
+    h.y += a.dir * CFG.AUTO_SPEED * (this.w > 900 ? 1.4 : 1) * dt;
     var wob = Math.sin(this.t * 2.3 + a.col * 0.05) * 5 + Math.sin(this.t * 0.9) * 7;
     if ((a.dir < 0 && h.y <= top) || (a.dir > 0 && h.y >= bottom)) {
-      a.dir *= -1;
+      a.dir *= -1; a.lift = 0.28;
       a.col += a.side * W * 0.86;
       if (a.col > this.w - W * 0.3 || a.col < W * 0.3) { a.side *= -1; a.col += a.side * W * 1.72; }
     }
@@ -562,7 +573,7 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
       } else if (silent || reduce === false && now - this.lastPtr > CFG.IDLE_MS) {
         this.autoTarget(dt);
       }
-      this.clean(this.prev.x, this.prev.y, this.head.x, this.head.y);
+      if (!(this.auto.lift > 0)) this.clean(this.prev.x, this.prev.y, this.head.x, this.head.y);
     } else {
       // runner: an unseen hand brushes along it, swaying; the visitor's finger or mouse brushes too
       var p = this.bp || (this.bp = { x: -40, y: this.h / 2, px: -40, py: this.h / 2, v: 1 });
@@ -586,17 +597,17 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
   };
 
   Carpet.prototype.draw = function () {
-    var N = this.gw * this.gh, dk = this.darkImg.data, lt = this.lightImg.data;
+    var N = this.gw * this.gh, dk = this.darkImg.data, lt = this.lightImg.data, NK = this.o.napK || 0.07, LK = this.o.napK ? 70 : 40;
     for (var i = 0; i < N; i++) {
       var d = this.dirt[i], w = this.wet[i], n = this.nap[i], p = i * 4;
       // multiply layer: soil (warm brown), wet (cool shade), pile laid away from you (shadow)
       var nd = n < 0 ? -n : 0;
-      var fr = (1 - d * 0.44) * (1 - w * 0.2) * (1 - nd * 0.2);
-      var fg = (1 - d * 0.52) * (1 - w * 0.19) * (1 - nd * 0.2);
-      var fb = (1 - d * 0.62) * (1 - w * 0.15) * (1 - nd * 0.19);
+      var fr = (1 - d * 0.44) * (1 - w * 0.12) * (1 - nd * NK);
+      var fg = (1 - d * 0.52) * (1 - w * 0.11) * (1 - nd * NK);
+      var fb = (1 - d * 0.62) * (1 - w * 0.08) * (1 - nd * NK);
       dk[p] = fr * 255; dk[p + 1] = fg * 255; dk[p + 2] = fb * 255;
       // screen layer: pile laid toward you catches the light
-      var l = n > 0 ? n * 70 * (1 - d * 0.6) : 0;
+      var l = n > 0 ? n * LK * (1 - d * 0.6) : 0;
       lt[p] = lt[p + 1] = lt[p + 2] = l;
     }
     this.dark.getContext('2d').putImageData(this.darkImg, 0, 0);
@@ -626,6 +637,10 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
     x.lineCap = 'round';
     x.strokeStyle = 'rgba(60,44,24,.2)'; x.lineWidth = 12;
     x.beginPath(); x.moveTo(h.x + 6, h.y + 8); x.lineTo(ox + 6, oy); x.stroke();
+    // hose, trailing off to the machine
+    x.strokeStyle = '#2a2e35'; x.lineWidth = 6;
+    x.beginPath(); x.moveTo(h.x + (ox - h.x) * .18, h.y + (oy - h.y) * .18);
+    x.bezierCurveTo(ox + 60, h.y + (oy - h.y) * .5, ox + 140, oy - 40, ox + 180, oy); x.stroke();
     // shaft
     x.strokeStyle = '#7d8691'; x.lineWidth = 9;
     x.beginPath(); x.moveTo(h.x, h.y); x.lineTo(ox, oy); x.stroke();
@@ -677,10 +692,16 @@ FORM: phone-first single column; room composition (wall above, baseboard, floor 
       floor.addEventListener('pointermove', function () { if (hero.ptr) requestAnimationFrame(tick); });
     }
   }
-  document.querySelectorAll('.js-runner').forEach(function (cv, k) { add(cv, { prestripe: true, seed: 23 + k * 7 }); });
+  // runners after the hero, when the browser is idle
+  (window.requestIdleCallback || setTimeout)(function () {
+    document.querySelectorAll('.js-runner').forEach(function (cv, k) { add(cv, { prestripe: true, napK: 0.16, seed: 23 + k * 7 }); });
+    wake();
+  });
 
+  var rt;
   window.addEventListener('resize', function () {
-    carpets.forEach(function (c) { if (c.resize()) c.draw(); });
+    clearTimeout(rt);
+    rt = setTimeout(function () { carpets.forEach(function (c) { if (c.resize()) c.draw(); }); }, 150);
   });
   wake();
 })();

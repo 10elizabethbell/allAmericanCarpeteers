@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "rgb(246, 241, 231)",
+        "createdAt": "2026-10-18T15:43:49.997Z",
+        "reason": "agent decision (both Impeccable reviewers agreed): cream is the room's wall in the carpet-room hero, named in the direction contract"
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-18T15:43:50.069Z",
+        "reason": "agent decision: 35-char footer tagline 'Cleaning · Restoration · Floor Care' copied from the business's flyer"
+      }
+    ]
+  }
+}
