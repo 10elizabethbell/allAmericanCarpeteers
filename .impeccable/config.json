@@ -113,6 +113,15 @@
         "value": "30px",
         "createdAt": "2026-10-18T15:48:42.795Z",
         "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T23:34:04.041Z",
+        "reason": "agent decision (both Impeccable reviewers agreed): cream #f6f1e7 is the room's wall in the carpet-room hero; the value-keyed ignore didn't match this rule"
       }
     ]
   }
