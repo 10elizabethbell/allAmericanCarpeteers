@@ -3,707 +3,502 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>All American Carpeteers LLC · Carpet, Upholstery & Floor Cleaning · Randolph, NJ</title>
-<meta name="description" content="Carpet, rug, upholstery, tile & grout and hardwood floor cleaning in Randolph, NJ and surrounding areas. Eco-friendly solutions. Call or text 973-978-9516.">
-<meta name="theme-color" content="#f6f1e7">
+<title>All American Carpeteers LLC · Carpet, upholstery &amp; floor cleaning · Randolph, NJ</title>
+<meta name="description" content="If you walk or sit on it, we clean it. Eco-friendly carpet, upholstery, tile &amp; grout and hardwood floor care in Randolph, NJ. Call or text 973-978-9516.">
+<meta name="theme-color" content="#f4f6fb">
 <meta property="og:type" content="website">
-<meta property="og:title" content="All American Carpeteers LLC">
-<meta property="og:description" content="If you walk or sit on it, we clean it. Carpet, upholstery, tile & grout and hardwood floors in Randolph, NJ. Call or text 973-978-9516.">
+<meta property="og:title" content="All American Carpeteers LLC · Cleaner, fresher homes in Randolph">
+<meta property="og:description" content="If you walk or sit on it, we clean it. Carpet, upholstery, tile &amp; grout and hardwood floors in Randolph, NJ. Call or text 973-978-9516.">
 <meta property="og:url" content="https://10elizabethbell.github.io/allAmericanCarpeteers/">
 <meta property="og:image" content="https://10elizabethbell.github.io/allAmericanCarpeteers/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CclipPath id='s'%3E%3Cpath d='M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d='M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z' fill='%2314346b'/%3E%3Cg clip-path='url(%23s)'%3E%3Cpath d='M-4 50L40 30v8L-4 58z' fill='%23fff'/%3E%3Cpath d='M-4 60L44 38v9L-4 68z' fill='%23c8102e'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
 <style>
-/* ---------- tokens ---------- */
+/* ---------- Tokens ---------- */
 :root{
-  --navy:#14346b;        /* flyer band navy */
-  --navy-deep:#0e2752;
-  --red:#c8102e;         /* flyer red */
-  --red-deep:#a50d26;
-  --wall:#f6f1e7;        /* the room's wall: warm cream */
-  --paper:#fffdf8;
-  --ink:#1c2433;
-  --ink-soft:#4a5468;
-  --base:#fff;
-  --focus:#c8102e;
-  --display:"Avenir Next Condensed","Arial Narrow","sans-serif-condensed",system-ui,sans-serif;
-  --body:system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  /* off-white paper, the flyer's flag navy in two depths, flag red as the one warm accent */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card */
+  --ink:#0e2752;         /* headings on light */
+  --body:#26364c;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#14346b;        /* flyer navy: hero, services */
+  --deep:#0e2752;        /* quote form, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d7ea;
+  --red:#c8102e;         /* flyer red: fills (white text, 5.9:1) and text on light (5.4:1) */
+  --red-2:#a80d27;       /* red fill on hover */
+  --red-lite:#ff8597;    /* red as text on navy (5.2:1) */
+  --line:rgba(14,39,82,.12);
+  --focus:#14346b;       /* form hover/focus outline, distinct from the red fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
   --gutter:20px;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth}
-body{margin:0;background:var(--wall);color:var(--ink);font:400 17px/1.55 var(--body);overflow-x:hidden}
-::selection{background:var(--navy);color:#fff}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--red);color:#fff}
+img,svg{display:block}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
-img{max-width:100%;display:block}
-.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
-h1,h2,h3{font-family:var(--display);font-stretch:condensed;font-weight:800;text-transform:uppercase;letter-spacing:.005em;line-height:.95;margin:0;text-wrap:balance}
-h2{font-size:clamp(36px,10vw,64px);color:var(--navy)}
-h3{font-size:22px;color:var(--navy)}
-p{margin:0;text-wrap:pretty}
-.icon{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-
-/* ---------- header ---------- */
-.top{background:var(--wall)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding-top:6px}
-.brand{display:flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;color:var(--navy)}
-.brand svg{width:38px;height:38px;flex:none}
-.brand b{font-family:var(--display);font-stretch:condensed;font-weight:800;text-transform:uppercase;font-size:17px;line-height:.92;letter-spacing:.01em;display:block}
-.brand small{font-size:.62em;letter-spacing:.06em;margin-left:2px}
-.tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-family:var(--display);font-stretch:condensed;font-weight:800;font-size:19px;color:var(--navy);text-decoration:none;white-space:nowrap}
-.tel .icon{width:19px;height:19px;color:var(--red)}
-.tel:hover{color:var(--red)}
-
-/* ---------- hero: wall, baseboard, carpet ---------- */
-.hero{position:relative}
-.hero-copy{padding-top:18px;padding-bottom:26px}
-.slogan-a{display:block;font-family:var(--display);font-stretch:condensed;font-style:italic;font-weight:700;text-transform:none;color:var(--red);font-size:clamp(25px,7.4vw,40px);line-height:1.05;letter-spacing:0}
-.slogan-b{display:block;font-size:clamp(64px,20.5vw,148px);color:var(--navy);line-height:.88;margin-top:4px}
-.promise{margin-top:16px;font-size:clamp(17px,4.6vw,20px);line-height:1.45;color:var(--ink-soft);max-width:30em}
-.actions{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:12px;border:2px solid var(--navy);font:800 18px/1 var(--body);text-decoration:none;cursor:pointer;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s cubic-bezier(.2,.8,.2,1)}
-.btn-primary{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 6px 16px -6px rgba(200,16,46,.55)}
-.btn-primary:hover{background:var(--red-deep);border-color:var(--red-deep)}
-.btn-ghost{background:transparent;color:var(--navy)}
-.btn-ghost:hover{background:var(--navy);color:#fff}
-.btn:active{transform:translateY(1px) scale(.99)}
-.hint{margin-top:14px;font-size:15px;color:var(--ink-soft);display:flex;align-items:center;gap:8px;transition:opacity .6s ease}
-.hint .icon{width:18px;height:18px;color:var(--navy)}
-.hint.gone{opacity:0}
-.baseboard{position:relative;z-index:2;height:18px;background:linear-gradient(#fff 0,#fbf8f2 55%,#e9e2d4 100%);box-shadow:0 5px 7px -2px rgba(60,45,25,.28)}
-.floor{position:relative;height:clamp(270px,46svh,470px);background:#d3c7b1}
-.floor canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;cursor:none}
-
-/* ---------- runner divider (a bound carpet runner) ---------- */
-.runner{position:relative;height:58px;background:#d3c7b1;border-top:7px solid var(--navy);border-bottom:7px solid var(--navy);box-shadow:0 3px 5px -1px rgba(60,45,25,.3)}
-.runner-bay{background:var(--paper);padding-bottom:44px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:#fff}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
 .nw{white-space:nowrap}
-.runner canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
 
-/* ---------- sections ---------- */
+/* ---------- Bands ---------- */
 section{padding:64px 0}
-.services{background:var(--paper);padding-bottom:44px}
-.svc-head{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
-.groups{display:grid;gap:30px}
-.group h3{padding-bottom:10px;border-bottom:2px solid var(--navy)}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--red-lite)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(14,39,82,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+.hero .eyebrow::before,.on-navy .eyebrow::before,.on-deep .eyebrow::before{background:var(--red-lite)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--red);color:#fff;border-color:var(--red)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;color:inherit}
+.brand svg{width:34px;height:34px;flex:none}
+.brand span{display:flex;flex-direction:column;line-height:1}
+.brand b{font:400 17px/1 var(--display);letter-spacing:.01em;white-space:nowrap}
+.brand b+b{margin-top:2px}
+.brand small{font:600 10px/1 var(--text);letter-spacing:.08em;margin-left:4px;color:var(--soft)}
+.tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--red)}
+@media (max-width:359px){.brand svg{display:none}.tel svg{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:68px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:12ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:30ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+
+/* ---------- Care ---------- */
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li+li{border-top:1px solid var(--line)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--red)}
+.owner{margin-top:24px;display:grid;gap:2px}
+.owner b{font:400 22px/1.2 var(--display);color:var(--ink)}
+.owner span{font-size:15px;color:var(--soft)}
+.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,20px)/1.2 var(--display);max-width:440px}
+.fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:var(--navy)}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(14,39,82,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.fb:focus-visible .arrow{background:var(--red);color:#fff;outline:3px solid var(--focus);outline-offset:3px}
+
+/* ---------- Services: rows on navy, only the arrow changes ---------- */
+.groups{display:grid;gap:36px;margin-top:36px}
+.group h3{font-size:21px;color:var(--on-dark);margin-bottom:6px}
 .rows{list-style:none;margin:0;padding:0}
-.row{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:60px;padding:8px 0;border-bottom:1px solid #e6dfd1;text-decoration:none;color:var(--ink);font-size:18px;font-weight:600}
+.rows li+li{border-top:1px solid rgba(255,255,255,.12)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:64px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(18px,4.9vw,20px)/1.2 var(--display)}
+.row small{display:block;font:15px/1.4 var(--text);color:var(--on-dark-soft);margin-top:4px}
+.row .arrow{background:rgba(255,255,255,.1);color:var(--on-dark)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
-.arrow{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;background:#ece6da;color:var(--navy);transition:background-color .18s ease,color .18s ease,transform .25s cubic-bezier(.2,.8,.2,1)}
-.arrow .icon{width:18px;height:18px}
-.row:hover .arrow,.row:focus-visible .arrow{background:var(--red);color:#fff;transform:translateX(3px)}
-.row:focus-visible .arrow{outline:3px solid var(--red);outline-offset:3px}
-.row small{display:block;font-weight:400;font-size:15px;color:var(--ink-soft);margin-top:1px}
+.row:focus-visible .arrow{background:var(--red);color:#fff;outline:3px solid #fff;outline-offset:3px}
 
-.care{background:var(--navy);color:#e9eef8}
-.care h2{color:#fff;max-width:12em}
-.care .lede{margin-top:18px;font-size:clamp(18px,4.8vw,21px);line-height:1.5;max-width:34em;color:#e9eef8}
-.points{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
-.points li{display:flex;gap:12px;align-items:center;font-weight:700;font-size:18px;color:#fff}
-.points svg{width:22px;height:22px;flex:none}
-.sign{margin-top:34px;display:flex;flex-direction:column;gap:2px}
-.sign .name{font-family:var(--display);font-stretch:condensed;font-style:italic;font-weight:700;font-size:34px;color:#fff;line-height:1}
-.sign .role{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#b9c6e2}
-.fb{margin-top:26px;color:#fff;border-color:#fff;align-self:flex-start}
-.fb:hover{background:#fff;color:var(--navy)}
-.fb .icon{fill:currentColor;stroke:none}
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--ink);margin-top:4px}
+.steps span{display:block;margin-top:4px;color:var(--soft)}
 
-.steps{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:26px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start}
-.steps li::before{counter-increment:s;content:counter(s);grid-row:span 2;font-family:var(--display);font-stretch:condensed;font-weight:800;font-size:58px;line-height:.8;color:var(--red)}
-.steps b{font-size:19px;color:var(--navy);text-wrap:balance}
-.steps span{color:var(--ink-soft)}
+/* ---------- Quote form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px;color:var(--body)}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+fieldset.field legend{margin-bottom:8px}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:110px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:46px;padding:0 16px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1.15 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{border-color:var(--focus);outline:none}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.chips input:checked:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:focus,.field.bad textarea:focus{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 13px}}
 
-.area{background:var(--paper)}
-.area .place{font-size:clamp(46px,14vw,104px);color:var(--navy);margin-top:6px}
-.area .place em{display:block;font-style:normal;font-size:clamp(22px,6vw,44px);color:var(--red);margin-top:8px}
-.area p{margin-top:18px;color:var(--ink-soft)}
-.area p a{display:inline-block;padding:11px 0;color:var(--navy);font-weight:700;text-underline-offset:3px}
-.area p a:hover{color:var(--red)}
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--soft)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--ink);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--red)}
+.area{margin-top:22px;max-width:40ch}
+.area a{color:var(--red);font-weight:600;display:inline-block;padding:10px 0;margin:-10px 0}
 
-.close{text-align:left}
-.close h2{font-size:clamp(44px,13vw,96px)}
-.close p{margin-top:16px;font-size:clamp(18px,4.8vw,21px);color:var(--ink-soft);max-width:30em}
-.close .actions{max-width:420px}
-.close .or{margin-top:14px;color:var(--ink-soft)}
-.close .or a{display:inline-block;padding:11px 0;color:var(--navy);font-weight:800;text-decoration:none;white-space:nowrap}
-.close .or a:hover{color:var(--red)}
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
 
-footer{background:var(--navy-deep);color:#c9d3e8;padding:40px 0 calc(40px + env(safe-area-inset-bottom));font-size:16px}
-footer .wrap{display:grid;gap:22px}
-footer .brand{color:#fff}
-footer .tag{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#9fb0d2;margin-top:6px}
-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
-footer a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:10px;min-height:44px}
-footer a:hover{color:#ffd0d8}
-footer .icon{width:19px;height:19px}
-footer .fbi{fill:currentColor;stroke:none}
-footer .fine{font-size:14px;color:#8f9fc0}
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;box-shadow:0 10px 28px rgba(8,24,46,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
 
-@media (min-width:600px){
-  .actions{flex-direction:row;flex-wrap:wrap}
-  .btn{min-width:230px}
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:400px){
+  .brand b{font-size:19px}
 }
-@media (min-width:900px){
+@media (min-width:760px){
   :root{--gutter:40px}
-  .top .wrap{min-height:84px}
-  .brand svg{width:46px;height:46px}
-  .brand b{font-size:21px}
-  .tel{font-size:24px}
-  .tel .icon{width:22px;height:22px}
-  .hero-copy{display:grid;grid-template-columns:1.15fr 1fr;gap:20px 56px;align-items:end;padding-top:26px;padding-bottom:40px}
-  .slogan-b{font-size:clamp(84px,9.2vw,140px)}
-  .slogan-a{font-size:clamp(30px,2.9vw,44px)}
-  .promise{margin-top:0}
-  .floor{height:clamp(320px,44svh,520px)}
+  .top .wrap{min-height:76px}
+  .brand svg{width:40px;height:40px}
+  .brand b{font-size:22px}
+  .tel{font-size:20px}
   section{padding:96px 0}
-  .svc-head{flex-direction:row;justify-content:space-between;align-items:end}
-  .groups{display:block;columns:2;column-gap:56px}
-  .group{break-inside:avoid;margin-bottom:34px}
-  .services{padding-bottom:56px}
-  .care .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start}
-  .care .side{padding-top:8px}
-  .points{margin-top:0}
-  .how .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
-  .steps{margin-top:6px}
-  .area .wrap{display:grid;grid-template-columns:1.8fr 1fr;gap:56px;align-items:end}
-  footer .wrap{grid-template-columns:1.4fr 1fr 1fr;align-items:start}
+  .hero-copy{padding-top:96px;padding-bottom:112px}
+  .promise{max-width:none}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .groups{grid-template-columns:1fr 1fr;column-gap:64px}
 }
-@media (max-width:359px){
-  .tel .icon{display:none}
-  .tel{font-size:17px}
-  .brand svg{width:32px;height:32px}
+@media (min-width:1024px){
+  .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
+  .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
+  .split .fb{grid-column:1;grid-row:2}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
+}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--red)}
+.btn-primary:hover{background:var(--red-2);border-color:var(--red-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.fb:hover .arrow,.row:hover .arrow{background:var(--red);color:#fff}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:3px solid var(--focus);outline-offset:3px}
+.sent a:hover{color:var(--red)}
+.bigtel:hover{color:var(--red)}
+footer a:hover{color:var(--red-lite)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .btn,.arrow{transition:none}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
 <!--
-THESIS: A carpet you can clean yourself. The hero is the floor of a room: soiled pile that a cleaning wand
-  works in alternating pull strokes, each stripe laid down wet and drying bright. A finger or mouse takes the wand.
-OWN-WORLD: wall-to-wall carpet, the wand pass and its nap stripes, a white baseboard, bound carpet runners;
-  flag navy and flag red from their flyer and star mark. Cream wall, never black.
-STORY: who (wordmark + number) -> their own promise "If you walk or sit on it, we clean it." -> clean the carpet ->
-  what we clean (tappable rows, each texts a quote) -> how we treat your home (Vincent's voice) -> how it works ->
-  where -> close -> footer.
-FIRST VIEWPORT: header with phone top-right; slogan as the one focal point; one-line promise; Text for a quote
-  (filled) + What we clean (outlined); the carpet with the wand already working below the baseboard.
-FORM: (concept roll skipped: unattended pitch-site build, world chosen from 6 trade worlds, runner-up in HANDOFF.md) phone-first single column; room composition (wall above, baseboard, floor below) at every width;
-  heavy condensed uppercase display, plain sentence-case body; runners between sections as the carried motion.
+THESIS: A one-man (or small-crew) floor and fabric cleaner earns trust through calm order (after lpmr.co.uk): one claim (cleaner, fresher homes in Randolph), his own slogan, three plain points, and an easy way to text Vincent.
+OWN-WORLD: Off-white paper, the flyer's flag navy (#14346b) and deep navy (#0e2752, faint diagonal lines) bands, flag red (#c8102e) as the one warm accent: a fill with white text, red text on light, a lighter red (#ff8597) as text on navy. Star mark from the flyer. Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who cleans carpets and floors in Randolph, reads how they treat the home, finds their job in the list, and texts Vincent a quote request.
+FIRST VIEWPORT: Paper header with star wordmark left and tap-to-call number top right. Navy textured hero: eyebrow, "Cleaner, fresher homes in Randolph.", the flyer slogan as the promise, two pill buttons (Get a quote, Text Vincent).
+FORM: calm band system without photos (the flyer's before/afters are ~210px wide and don't show the same subject); the earlier carpet-wand world is in git history (0054f3f).
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md and HANDOFF.md
 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 64 64"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z"/></symbol>
+  <clipPath id="star-clip"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z"/></clipPath>
+</svg>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="All American Carpeteers LLC, home">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><defs><clipPath id="star-clip"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z"/></clipPath></defs><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#14346b"/><g clip-path="url(#star-clip)"><path d="M-4 50L40 30v8L-4 58z" fill="#fff"/><path d="M-4 60L44 38v9L-4 68z" fill="#c8102e"/></g></svg>
+    <a class="brand" href="#" aria-label="All American Carpeteers LLC, back to top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-star" fill="#14346b"/><g clip-path="url(#star-clip)"><path d="M-4 50L40 30v8L-4 58z" fill="#fff"/><path d="M-4 60L44 38v9L-4 68z" fill="#c8102e"/></g></svg>
       <span><b>All American</b><b>Carpeteers<small>LLC</small></b></span>
     </a>
-    <a class="tel" href="tel:+19739789516" aria-label="Call 973-978-9516"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-978-9516</a>
+    <a class="tel" href="tel:+19739789516"><svg aria-hidden="true"><use href="#i-phone"/></svg>973-978-9516</a>
   </div>
 </header>
 
 <main id="top">
-  <div class="hero">
-    <div class="wrap hero-copy">
-      <h1><span class="slogan-a">If you walk or sit on it,</span><span class="slogan-b">We clean it.</span></h1>
-      <div class="hero-side">
-      <p class="promise">Eco-friendly cleaning that leaves your home cleaner, fresher and healthier.</p>
-      <div>
-        <div class="actions">
-          <a class="btn btn-primary js-sms" data-msg="quote" href="sms:+19739789516"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z"/></svg>Text for a quote</a>
-          <a class="btn btn-ghost" href="#clean">What we clean</a>
-        </div>
-        <p class="hint" id="hint"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>Drag across the carpet to clean it.</p>
-      </div>
-      </div>
+<section class="hero" id="hero" aria-labelledby="h1">
+  <div class="wrap hero-copy">
+    <p class="eyebrow">Eco-friendly cleaning</p>
+    <h1 id="h1">Cleaner, fresher homes <span class="accent">in Randolph.</span></h1>
+    <p class="promise">If you walk or sit on it, <b>we clean it.</b></p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Get a quote</a>
+      <a class="btn btn-ghost" data-sms href="sms:+19739789516?&amp;body=Hi%20Vincent%2C%20I%20found%20your%20website.%20I%20need%20a%20quote%20for%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text Vincent</a>
     </div>
-    <div class="baseboard" aria-hidden="true"></div>
-    <div class="floor"><canvas id="floor" aria-label="A soiled carpet being cleaned in stripes. Drag across it to clean it yourself." role="img"></canvas></div>
   </div>
+</section>
 
-  <section class="services" id="clean">
-    <div class="wrap">
-      <div class="svc-head">
-        <h2>What we clean</h2>
-      </div>
-      <div class="groups">
-        <div class="group">
-          <h3>Carpet &amp; fabric</h3>
-          <ul class="rows">
-            <li><a class="row js-sms" data-svc="carpet and area rug cleaning" href="sms:+19739789516">Carpet &amp; area rugs<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="upholstery cleaning" href="sms:+19739789516"><span>Upholstery<small>Sofas, sectionals, chairs</small></span><span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="outdoor furniture and cushion cleaning" href="sms:+19739789516">Outdoor furniture &amp; cushions<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="baby car seat and stroller cleaning" href="sms:+19739789516">Baby car seats &amp; strollers<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="cheerleader/gym mat cleaning" href="sms:+19739789516">Cheer &amp; gym mats<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-          </ul>
-        </div>
-        <div class="group">
-          <h3>Hard floors</h3>
-          <ul class="rows">
-            <li><a class="row js-sms" data-svc="hardwood floor cleaning" href="sms:+19739789516">Hardwood floor cleaning<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="a hardwood screen and recoat" href="sms:+19739789516">Screen &amp; recoat<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="hardwood refinishing and custom staining" href="sms:+19739789516">Refinishing &amp; custom staining<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="tile and grout cleaning and sealing" href="sms:+19739789516">Tile &amp; grout cleaning &amp; sealing<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-            <li><a class="row js-sms" data-svc="basement and garage floor cleaning, sealing and painting" href="sms:+19739789516"><span>Basement &amp; garage floors<small>Cleaning, sealing, painting</small></span><span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-          </ul>
-        </div>
-        <div class="group">
-          <h3>Businesses</h3>
-          <ul class="rows">
-            <li><a class="row js-sms" data-svc="commercial cleaning" href="sms:+19739789516">Commercial cleaning<span class="arrow"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-          </ul>
-        </div>
-      </div>
+<section class="on-paper" aria-labelledby="h-care">
+  <div class="wrap split">
+    <div class="rise">
+      <h2 id="h-care">We clean your home like it's our own.</h2>
+      <p class="lede" style="margin-top:16px">The couch is where your family sits and the rug is where the kids play, so we treat them that way. Quality workmanship, dependable service, and a home that's cleaner, fresher and healthier.</p>
+      <p class="owner"><b>Vincent Morea</b><span>Owner / Operator</span></p>
     </div>
-  </section>
+    <ul class="claims">
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 32C8 16 18 7 34 6c0 16-9 26-24 26z"/><path d="M8 32l14-14"/></svg>Eco-friendly, organic solutions</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 5c6 8 10 13.5 10 19a10 10 0 0 1-20 0c0-5.5 4-11 10-19z"/><path d="M6 6l28 28"/></svg>Deep low-moisture cleaning</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l3.6 9.4L33 17l-9.4 3.6L20 30l-3.6-9.4L7 17l9.4-3.6z"/><path d="M31 27l1.4 3.6L36 32l-3.6 1.4L31 37l-1.4-3.6L26 32l3.6-1.4z"/></svg>Removes dirt, stains and odors</li>
+    </ul>
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=100004055979808" rel="noopener">
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See us on Facebook</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
 
-  <div class="runner-bay"><div class="runner" aria-hidden="true"><canvas class="js-runner"></canvas></div></div>
-
-  <section class="care">
-    <div class="wrap">
-      <div>
-        <h2>We clean your home like it's our own.</h2>
-        <p class="lede">The couch is where your family sits and the rug is where the kids play, so we treat them that way. We take pride in quality workmanship and dependable service.</p>
-      </div>
-      <div class="side">
-        <ul class="points">
-          <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Eco-friendly, organic solutions</li>
-          <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Deep low-moisture cleaning</li>
-          <li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#c8102e"/></svg>Removes dirt, stains and odors</li>
+<section class="on-navy" id="clean" aria-labelledby="h-clean">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Homes and businesses</p>
+      <h2 id="h-clean">What we <span class="accent">clean.</span></h2>
+    </div>
+    <div class="groups">
+      <div class="group rise">
+        <h3>Carpet &amp; fabric</h3>
+        <ul class="rows">
+          <li><a class="row" data-pick="Carpet &amp; rugs" href="#ask">Carpet &amp; area rugs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Upholstery" href="#ask"><span>Upholstery<small>Sofas, sectionals, chairs</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Outdoor cushions" href="#ask">Outdoor furniture &amp; cushions<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Car seats &amp; strollers" href="#ask">Baby car seats &amp; strollers<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Gym mats" href="#ask">Cheer &amp; gym mats<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
         </ul>
-        <div class="sign">
-          <span class="name">Vincent Morea</span>
-          <span class="role">Owner / Operator</span>
-          <a class="btn btn-ghost fb" href="https://www.facebook.com/profile.php?id=100004055979808"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>See us on Facebook</a>
-        </div>
+      </div>
+      <div class="group rise">
+        <h3>Floors</h3>
+        <ul class="rows">
+          <li><a class="row" data-pick="Hardwood" href="#ask">Hardwood floor cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Hardwood" href="#ask">Screen &amp; recoat<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Hardwood" href="#ask">Refinishing &amp; custom staining<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Tile &amp; grout" href="#ask">Tile &amp; grout cleaning &amp; sealing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Basement or garage" href="#ask"><span>Basement &amp; garage floors<small>Cleaning, sealing, painting</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+      <div class="group rise">
+        <h3>Businesses</h3>
+        <ul class="rows">
+          <li><a class="row" data-pick="Commercial" href="#ask">Commercial cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="how">
-    <div class="wrap">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><b>Call or text what needs cleaning.</b><span>A photo and your town help.</span></li>
-        <li><b>Get your quote.</b><span>Straight from Vincent, the owner.</span></li>
-        <li><b>We come to you and clean it.</b><span>Carpet, couch, tile or hardwood, right in your home.</span></li>
-      </ol>
+<section class="on-paper how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How it works</h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Text or call what needs cleaning.</b><span>A photo and your town help.</span></div></li>
+      <li class="rise"><div><b>Get your quote.</b><span>Straight from Vincent, the owner.</span></div></li>
+      <li class="rise"><div><b>We come to you and clean it.</b><span>Carpet, couch, tile or hardwood, right in your home.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="on-deep ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Quotes by text</p>
+      <h2 id="h-ask">Tell us what needs <span class="accent">cleaning.</span></h2>
+      <p class="lede">Not sure it's something we do? Ask anyway.</p>
     </div>
-  </section>
+    <form id="quoteForm" class="rise" novalidate>
+      <fieldset class="field" id="f-what">
+        <legend>What needs cleaning?</legend>
+        <div class="chips">
+          <input type="checkbox" name="what" id="c1" value="Carpet &amp; rugs"><label for="c1">Carpet &amp; rugs</label>
+          <input type="checkbox" name="what" id="c2" value="Upholstery"><label for="c2">Upholstery</label>
+          <input type="checkbox" name="what" id="c3" value="Hardwood"><label for="c3">Hardwood</label>
+          <input type="checkbox" name="what" id="c4" value="Tile &amp; grout"><label for="c4">Tile &amp; grout</label>
+          <input type="checkbox" name="what" id="c5" value="Basement or garage"><label for="c5">Basement or garage</label>
+          <input type="checkbox" name="what" id="c6" value="Outdoor cushions"><label for="c6">Outdoor cushions</label>
+          <input type="checkbox" name="what" id="c7" value="Car seats &amp; strollers"><label for="c7">Car seats &amp; strollers</label>
+          <input type="checkbox" name="what" id="c8" value="Gym mats"><label for="c8">Gym mats</label>
+          <input type="checkbox" name="what" id="c9" value="Commercial"><label for="c9">Commercial</label>
+        </div>
+        <p class="err" id="e-what">Pick what needs cleaning, or tell us below.</p>
+      </fieldset>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so Vincent knows who's texting.</p>
+      </div>
+      <div class="field">
+        <label for="where">Your town <small>(optional)</small></label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="e.g. Randolph">
+      </div>
+      <div class="field">
+        <label for="more">Anything else? <small>(optional)</small></label>
+        <textarea id="more" name="more" maxlength="600" placeholder="Room sizes, stains, pets, a good day…"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Vincent</button>
+      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call or text <a href="tel:+19739789516">973-978-9516</a>.</p>
+      <p class="after">Opens your messages with this written out.</p>
+    </form>
+  </div>
+</section>
 
-  <div class="runner" aria-hidden="true"><canvas class="js-runner"></canvas></div>
-
-  <section class="area">
-    <div class="wrap">
-      <h2 class="place"><span class="nw">Randolph, NJ</span><em>&amp; surrounding areas</em></h2>
-      <p>Not sure we come to your town? <a class="js-sms" data-msg="area" href="sms:+19739789516">Text us and ask.</a></p>
+<section class="on-paper close" id="close" aria-labelledby="h-close">
+  <div class="wrap">
+    <div class="rise">
+      <h2 id="h-close">All American Carpeteers LLC</h2>
+      <p class="who">Cleaning · Restoration · Floor care</p>
+      <p class="area">Proudly serving Randolph, NJ &amp; surrounding areas. Not sure we come to your town? <a data-sms href="sms:+19739789516?&amp;body=Hi%20Vincent%2C%20do%20you%20come%20to%20">Text and ask.</a></p>
     </div>
-  </section>
-
-  <section class="close">
-    <div class="wrap">
-      <h2>Let's get it clean.</h2>
-      <div class="actions"><a class="btn btn-primary js-sms" data-msg="quote" href="sms:+19739789516"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.8A8 8 0 1 1 21 12z"/></svg>Text for a quote</a></div>
-      <p class="or">or call <a href="tel:+19739789516">973-978-9516</a></p>
-    </div>
-  </section>
+    <a class="bigtel rise" href="tel:+19739789516"><svg aria-hidden="true"><use href="#i-phone"/></svg>973-978-9516</a>
+  </div>
+</section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>
-      <a class="brand" href="#top" aria-label="All American Carpeteers LLC, back to top">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3l8.6 18.7 20.4 2.3-15.2 13.8 4.3 20.1L32 47.7 13.9 57.9l4.3-20.1L3 24l20.4-2.3z" fill="#fff"/><g clip-path="url(#star-clip)"><path d="M-4 50L40 30v8L-4 58z" fill="#0e2752"/><path d="M-4 60L44 38v9L-4 68z" fill="#c8102e"/></g></svg>
-        <span><b>All American</b><b>Carpeteers<small>LLC</small></b></span>
-      </a>
-      <p class="tag">Cleaning · Restoration · Floor Care</p>
-    </div>
-    <ul>
-      <li><a href="tel:+19739789516"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-978-9516</a></li>
-      <li><a href="https://www.facebook.com/profile.php?id=100004055979808"><svg class="icon fbi" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a></li>
-    </ul>
-    <div>
-      <p>Proudly serving Randolph, NJ &amp; surrounding areas.</p>
-      <p class="fine">© 2026 All American Carpeteers LLC</p>
-    </div>
+    <span>All American Carpeteers LLC · Vincent Morea, Owner / Operator · Randolph, NJ · <span class="nw">973-978-9516</span></span>
+    <nav aria-label="Contact">
+      <a href="https://www.facebook.com/profile.php?id=100004055979808" rel="noopener">Facebook</a>
+    </nav>
+    <span>© 2026 All American Carpeteers LLC</span>
   </div>
 </footer>
 
+<a class="float" id="float" data-sms href="sms:+19739789516?&amp;body=Hi%20Vincent%2C%20I%20found%20your%20website.%20I%20need%20a%20quote%20for%3A%20" aria-label="Text Vincent"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
 <script>
-/* ---------- text-message links ---------- */
-(function () {
-  var NUM = '+19739789516';
-  var MSG = {
-    quote: "Hi Vincent! I found All American Carpeteers online and I'd like a quote.\nWhat needs cleaning: \nTown: ",
-    area: "Hi Vincent! Do you come to my town? I'm in: "
-  };
-  document.querySelectorAll('.js-sms').forEach(function (a) {
-    var body = a.dataset.svc
-      ? "Hi Vincent! I found All American Carpeteers online and I'd like a quote for " + a.dataset.svc + ".\nTown: "
-      : MSG[a.dataset.msg] || MSG.quote;
-    a.href = 'sms:' + NUM + '?&body=' + encodeURIComponent(body);
+/* ===== Config ===== */
+var CONFIG = {
+  PHONE: '+19739789516',
+  FLOAT: true  // the floating text circle; false removes it
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Service rows: tapping one ticks its chip in the quote form ===== */
+(function(){
+  [].forEach.call(document.querySelectorAll('[data-pick]'),function(a){
+    a.addEventListener('click',function(){
+      var box=document.querySelector('#quoteForm input[name=what][value="'+a.getAttribute('data-pick')+'"]');
+      if(box){box.checked=true;document.getElementById('f-what').classList.remove('bad')}
+    });
   });
 })();
 
-/* ---------- carpet: shared simulation + one animation loop ---------- */
-(function () {
-  var CFG = {
-    CELL: 4,              // css px per simulation cell
-    DPR_MAX: 1.5,
-    WAND_W: 124,          // widest wand head, css px (about a fifth of the floor on phones)
-    AUTO_SPEED: 280,      // px/s of the self-running wand
-    IDLE_MS: 2200,        // after the finger leaves, the wand runs itself again
-    REGROW: 0.006,        // per second, soil creeping back once a stripe is dry
-    DRY_S: 2.6,           // seconds for a wet stripe to dry
-    NAP_RELAX: 0.012,     // per second, stripes fade very slowly
-    RUNNER_RELAX: 0.07,
-    BRUSH_R: 26           // runner brush radius
-  };
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* seeded value noise */
-  function rng(seed) { var s = seed % 2147483647; if (s <= 0) s += 2147483646; return function () { return (s = s * 16807 % 2147483647) / 2147483647; }; }
-  function makeNoise(seed) {
-    var G = 64, r = rng(seed), g = new Float32Array(G * G);
-    for (var i = 0; i < g.length; i++) g[i] = r();
-    function sm(t) { return t * t * (3 - 2 * t); }
-    function n(x, y) {
-      var xi = Math.floor(x), yi = Math.floor(y), fx = sm(x - xi), fy = sm(y - yi);
-      var x0 = ((xi % G) + G) % G, y0 = ((yi % G) + G) % G, x1 = (x0 + 1) % G, y1 = (y0 + 1) % G;
-      var a = g[y0 * G + x0], b = g[y0 * G + x1], c = g[y1 * G + x0], d = g[y1 * G + x1];
-      return a + (b - a) * fx + (c - a) * fy + (a - b - c + d) * fx * fy;
-    }
-    return function (x, y) { return (n(x, y) * 0.55 + n(x * 2.1 + 7, y * 2.1 + 3) * 0.3 + n(x * 4.3 + 1, y * 4.3 + 9) * 0.15); };
-  }
-  function smooth(e0, e1, x) { var t = Math.min(1, Math.max(0, (x - e0) / (e1 - e0))); return t * t * (3 - 2 * t); }
-
-  /* carpet pile texture: mottled base + thousands of tufts, drawn once per size */
-  function weave(w, h, dpr, seed) {
-    var c = document.createElement('canvas');
-    c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
-    var x = c.getContext('2d'), r = rng(seed);
-    x.fillStyle = '#d3c7b1'; x.fillRect(0, 0, c.width, c.height);
-    // soft mottling
-    var m = document.createElement('canvas'), mw = Math.ceil(w / 14) + 2, mh = Math.ceil(h / 14) + 2;
-    m.width = mw; m.height = mh;
-    var mx = m.getContext('2d'), id = mx.createImageData(mw, mh);
-    for (var i = 0; i < mw * mh; i++) {
-      var v = r(); id.data[i * 4] = id.data[i * 4 + 1] = id.data[i * 4 + 2] = v > .5 ? 255 : 90; id.data[i * 4 + 3] = Math.abs(v - .5) * 70;
-    }
-    mx.putImageData(id, 0, 0);
-    x.imageSmoothingEnabled = true; x.drawImage(m, 0, 0, mw, mh, -14 * dpr, -14 * dpr, (mw) * 14 * dpr, (mh) * 14 * dpr);
-    // tufts in a handful of shades
-    var shades = ['#bfb299', '#c8bba3', '#d8ccb6', '#e3d9c6', '#ebe3d3', '#b3a58b', '#f1eadc'];
-    var n = Math.round(w * h / 4.2);
-    for (var k = 0; k < shades.length; k++) {
-      x.fillStyle = shades[k];
-      x.beginPath();
-      for (var j = 0; j < n / shades.length; j++) {
-        var px = r() * c.width, py = r() * c.height, s = (0.7 + r() * 0.9) * dpr;
-        x.rect(px, py, s, s * (1.1 + r() * 0.6));
-      }
-      x.fill();
-    }
-    return c;
-  }
-
-  var carpets = [];
-
-  function Carpet(canvas, opt) {
-    this.c = canvas; this.ctx = canvas.getContext('2d'); this.o = opt;
-    this.w = this.h = 0; this.visible = true; this.seed = opt.seed || 7;
-    this.ptr = null; this.lastPtr = -1e9; this.head = null; this.prev = null;
-    this.auto = { dir: -1, side: 1, stepping: 0 };
-    this.t = Math.random() * 100;
-    var self = this;
-    // pointer: mouse hover drives it on desktop; touch drags anywhere (incl. up/down)
-    function at(e) { self.ptr = { cx: e.clientX, cy: e.clientY }; self.lastPtr = performance.now(); self.o.onTouch && self.o.onTouch(); }
-    if (opt.wand) {
-      canvas.addEventListener('pointerdown', function (e) { e.preventDefault(); try { canvas.setPointerCapture(e.pointerId); } catch (_) {} at(e); });
-      canvas.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse' || e.buttons || e.pressure > 0) at(e); });
-      canvas.addEventListener('pointerup', function () { self.ptr = null; });
-      canvas.addEventListener('pointercancel', function () { self.ptr = null; });
-      canvas.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') self.ptr = null; });
-    } else {
-      canvas.addEventListener('pointermove', function (e) { if (e.pointerType === 'mouse') at(e); });
-      canvas.addEventListener('pointerleave', function () { self.ptr = null; });
-      canvas.addEventListener('touchstart', function (e) { at(e.touches[0]); }, { passive: true });
-      canvas.addEventListener('touchmove', function (e) { at(e.touches[0]); }, { passive: true });
-      canvas.addEventListener('touchend', function () { self.ptr = null; }, { passive: true });
-    }
-  }
-
-  Carpet.prototype.resize = function () {
-    var r = this.c.getBoundingClientRect(), w = Math.round(r.width), h = Math.round(r.height);
-    if (!w || !h || (w === this.w && h === this.h)) return false;   // address-bar resizes keep the scene
-    this.w = w; this.h = h;
-    this.dpr = Math.min(window.devicePixelRatio || 1, CFG.DPR_MAX);
-    this.c.width = Math.round(w * this.dpr); this.c.height = Math.round(h * this.dpr);
-    this.tex = weave(w, h, this.dpr, this.seed);
-    var C = CFG.CELL, gw = this.gw = Math.ceil(w / C) + 1, gh = this.gh = Math.ceil(h / C) + 1, N = gw * gh;
-    this.dirt = new Float32Array(N); this.target = new Float32Array(N); this.wet = new Float32Array(N); this.nap = new Float32Array(N); this.napBase = new Float32Array(N);
-    this.dark = document.createElement('canvas'); this.dark.width = gw; this.dark.height = gh;
-    this.light = document.createElement('canvas'); this.light.width = gw; this.light.height = gh;
-    this.darkImg = this.dark.getContext('2d').createImageData(gw, gh);
-    this.lightImg = this.light.getContext('2d').createImageData(gw, gh);
-    for (var i = 0; i < N; i++) { this.lightImg.data[i * 4 + 3] = 255; this.darkImg.data[i * 4 + 3] = 255; }
-    this.wandW = Math.max(64, Math.min(CFG.WAND_W, w / 5.2));
-    if (this.o.dirt) this.soil();
-    if (this.o.prestripe) this.prestripe();
-    if (this.o.wand) { this.head = { x: w * 0.12, y: h + 10 }; this.prev = { x: this.head.x, y: this.head.y }; this.auto = { dir: -1, side: 1 }; this.warm(); }
-    return true;
-  };
-
-  /* where the soil sits: a traffic lane, mottling, a few stains, speckle */
-  Carpet.prototype.soil = function () {
-    var C = CFG.CELL, nz = makeNoise(this.seed * 13), r = rng(this.seed * 31), w = this.w, h = this.h;
-    var stains = [];
-    for (var s = 0; s < Math.max(3, Math.round(w * h / 90000)); s++) stains.push({ x: r() * w, y: h * (0.2 + r() * 0.75), rad: 14 + r() * 26, k: 0.2 + r() * 0.22 });
-    for (var gy = 0; gy < this.gh; gy++) for (var gx = 0; gx < this.gw; gx++) {
-      var x = gx * C, y = gy * C, i = gy * this.gw + gx;
-      var lane = Math.exp(-Math.pow((y - h * 0.62) / (h * 0.42), 2));
-      var n = nz(x / 70, y / 70);
-      var d = smooth(0.36, 0.78, n * 0.55 + lane * 0.5) * 0.5;
-      for (var k = 0; k < stains.length; k++) {
-        var st = stains[k], dx = x - st.x, dy = y - st.y, lim = st.rad * 1.4;
-        if (dx > lim || dx < -lim || dy > lim || dy < -lim) continue;
-        var dd = Math.sqrt(dx * dx + dy * dy) / (st.rad * (0.75 + nz(x / 12, y / 12) * 0.6));
-        if (dd < 1) d += (1 - dd * dd) * st.k;
-      }
-      if (r() < 0.01) d += 0.08 + r() * 0.14;
-      d = Math.min(1, d);
-      this.target[i] = d; this.dirt[i] = d;
-    }
-  };
-
-  /* a clean carpet with soft alternating stripes already laid */
-  Carpet.prototype.prestripe = function () {
-    var C = CFG.CELL, sw = Math.max(44, this.w / 7), nz = makeNoise(this.seed * 5);
-    for (var gy = 0; gy < this.gh; gy++) for (var gx = 0; gx < this.gw; gx++) {
-      var x = gx * C + Math.sin(gy * C / 60) * 6 + (nz(gx / 9, gy / 9) - .5) * 14;
-      this.nap[gy * this.gw + gx] = this.napBase[gy * this.gw + gx] = (Math.floor(x / sw) % 2 ? 0.7 : -0.6);
-    }
-  };
-
-  /* run the wand a few strokes before the first paint so stripes are already there */
-  Carpet.prototype.warm = function () {
-    if (reduce) { for (var k = 0; k < 420; k++) this.step(1 / 60, true); return; }
-    // lay about 40% of the floor clean before the first paint
-    var n = Math.round(60 * (this.h / CFG.AUTO_SPEED) * Math.ceil(this.w * 0.4 / (this.wandW * 0.86)));
-    for (var j = 0; j < n; j++) this.step(1 / 60, true);
-  };
-
-  Carpet.prototype.clean = function (ax, ay, bx, by) {
-    var C = CFG.CELL, W = this.wandW, hw = W / 2, gw = this.gw, gh = this.gh;
-    var mvx = bx - ax, mvy = by - ay, len = Math.sqrt(mvx * mvx + mvy * mvy);
-    // wand head stays square to the shaft, which runs to the operator below the floor
-    var ox = this.w * 0.5 + (bx - this.w * 0.5) * 0.55, oy = this.h + 260;
-    var sx = ox - bx, sy = oy - by, sl = Math.sqrt(sx * sx + sy * sy) || 1; sx /= sl; sy /= sl;
-    var hx = -sy, hy = sx;                          // head axis
-    var napT = len > 0.01 ? Math.max(-1, Math.min(1, (-mvy / len) * 1.1)) : 0; // pulling up lays the pile light
-    var samples = Math.max(1, Math.ceil(len / 3));
-    for (var s = 1; s <= samples; s++) {
-      var px = ax + mvx * s / samples, py = ay + mvy * s / samples;
-      var x0 = Math.max(0, Math.floor((px - hw - 8) / C)), x1 = Math.min(gw - 1, Math.ceil((px + hw + 8) / C));
-      var y0 = Math.max(0, Math.floor((py - hw - 8) / C)), y1 = Math.min(gh - 1, Math.ceil((py + hw + 8) / C));
-      for (var gy = y0; gy <= y1; gy++) for (var gx = x0; gx <= x1; gx++) {
-        var dx = gx * C - px, dy = gy * C - py;
-        var u = Math.abs(dx * hx + dy * hy), v = Math.abs(dx * sx + dy * sy);
-        if (u > hw || v > 7) continue;
-        var edge = smooth(hw, hw - 6, u), i = gy * gw + gx;
-        this.dirt[i] *= 1 - 0.5 * edge;
-        this.wet[i] = Math.max(this.wet[i], edge);
-        if (len > 0.5) this.nap[i] += (napT * 0.85 - this.nap[i]) * edge * 0.6;
-      }
-    }
-  };
-
-  Carpet.prototype.brush = function (ax, ay, bx, by) {
-    var C = CFG.CELL, R = CFG.BRUSH_R, gw = this.gw, gh = this.gh;
-    var mvx = bx - ax, mvy = by - ay, len = Math.sqrt(mvx * mvx + mvy * mvy);
-    if (len < 0.3) return;
-    var napT = Math.max(-1, Math.min(1, mvx / len)) * 0.9;   // runners: brushing right lays it light
-    var samples = Math.ceil(len / 4);
-    for (var s = 1; s <= samples; s++) {
-      var px = ax + mvx * s / samples, py = ay + mvy * s / samples;
-      var x0 = Math.max(0, Math.floor((px - R) / C)), x1 = Math.min(gw - 1, Math.ceil((px + R) / C));
-      var y0 = Math.max(0, Math.floor((py - R) / C)), y1 = Math.min(gh - 1, Math.ceil((py + R) / C));
-      for (var gy = y0; gy <= y1; gy++) for (var gx = x0; gx <= x1; gx++) {
-        var dx = gx * C - px, dy = gy * C - py, d = Math.sqrt(dx * dx + dy * dy) / R;
-        if (d >= 1) continue;
-        var k = (1 - d * d) * 0.15, i = gy * gw + gx;
-        this.nap[i] += (napT - this.nap[i]) * k;
-      }
-    }
-  };
-
-  /* self-running wand: pull strokes up and down the floor, side-stepping one head-width each time */
-  Carpet.prototype.autoTarget = function (dt) {
-    var a = this.auto, h = this.head, W = this.wandW;
-    if (a.col == null) a.col = h.x;
-    if (a.lift > 0) { a.lift -= dt; h.x += (a.col - h.x) * Math.min(1, dt * 16); return; }  // wand lifted while it side-steps
-    var top = 26, bottom = this.h + 4;
-    h.y += a.dir * CFG.AUTO_SPEED * (this.w > 900 ? 1.4 : 1) * dt;
-    var wob = Math.sin(this.t * 2.3 + a.col * 0.05) * 5 + Math.sin(this.t * 0.9) * 7;
-    if ((a.dir < 0 && h.y <= top) || (a.dir > 0 && h.y >= bottom)) {
-      a.dir *= -1; a.lift = 0.28;
-      a.col += a.side * W * 0.86;
-      if (a.col > this.w - W * 0.3 || a.col < W * 0.3) { a.side *= -1; a.col += a.side * W * 1.72; }
-    }
-    h.x += (a.col + wob - h.x) * Math.min(1, dt * 7);
-  };
-
-  Carpet.prototype.step = function (dt, silent) {
-    this.t += dt;
-    var now = performance.now(), N = this.gw * this.gh, i;
-    if (this.o.wand) {
-      this.prev.x = this.head.x; this.prev.y = this.head.y;
-      if (this.ptr && !silent) {
-        var r = this.c.getBoundingClientRect();                       // read every frame: the page may scroll under the finger
-        var tx = this.ptr.cx - r.left, ty = this.ptr.cy - r.top;
-        var k = Math.min(1, dt * 18);
-        this.head.x += (tx - this.head.x) * k; this.head.y += (ty - this.head.y) * k;
-        this.auto.col = null;
-        this.auto.dir = ty < this.h / 2 ? 1 : -1;
-      } else if (silent || reduce === false && now - this.lastPtr > CFG.IDLE_MS) {
-        this.autoTarget(dt);
-      }
-      if (!(this.auto.lift > 0)) this.clean(this.prev.x, this.prev.y, this.head.x, this.head.y);
-    } else {
-      // runner: an unseen hand brushes along it, swaying; the visitor's finger or mouse brushes too
-      var p = this.bp || (this.bp = { x: -40, y: this.h / 2, px: -40, py: this.h / 2, v: 1 });
-      p.px = p.x; p.py = p.y;
-      p.x += p.v * 120 * dt;
-      p.y = this.h / 2 + Math.sin(this.t * 1.7) * this.h * 0.32 + Math.sin(this.t * 0.6) * 4;
-      if (p.x > this.w + 40) p.v = -1; else if (p.x < -40) p.v = 1;
-      if (!reduce) this.brush(p.px, p.py, p.x, p.y);
-      if (this.ptr) {
-        var rr = this.c.getBoundingClientRect(), qx = this.ptr.cx - rr.left, qy = this.ptr.cy - rr.top;
-        if (this.lp) this.brush(this.lp.x, this.lp.y, qx, qy);
-        this.lp = { x: qx, y: qy };
-      } else this.lp = null;
-    }
-    var dry = dt / CFG.DRY_S, grow = CFG.REGROW * dt, relax = (this.o.wand ? CFG.NAP_RELAX : CFG.RUNNER_RELAX) * dt;
-    for (i = 0; i < N; i++) {
-      if (this.wet[i] > 0) this.wet[i] = Math.max(0, this.wet[i] - dry);
-      else if (this.o.dirt) this.dirt[i] += (this.target[i] - this.dirt[i]) * grow;
-      this.nap[i] += (this.napBase[i] - this.nap[i]) * relax;
-    }
-  };
-
-  Carpet.prototype.draw = function () {
-    var N = this.gw * this.gh, dk = this.darkImg.data, lt = this.lightImg.data, NK = this.o.napK || 0.07, LK = this.o.napK ? 70 : 40;
-    for (var i = 0; i < N; i++) {
-      var d = this.dirt[i], w = this.wet[i], n = this.nap[i], p = i * 4;
-      // multiply layer: soil (warm brown), wet (cool shade), pile laid away from you (shadow)
-      var nd = n < 0 ? -n : 0;
-      var fr = (1 - d * 0.44) * (1 - w * 0.12) * (1 - nd * NK);
-      var fg = (1 - d * 0.52) * (1 - w * 0.11) * (1 - nd * NK);
-      var fb = (1 - d * 0.62) * (1 - w * 0.08) * (1 - nd * NK);
-      dk[p] = fr * 255; dk[p + 1] = fg * 255; dk[p + 2] = fb * 255;
-      // screen layer: pile laid toward you catches the light
-      var l = n > 0 ? n * LK * (1 - d * 0.6) : 0;
-      lt[p] = lt[p + 1] = lt[p + 2] = l;
-    }
-    this.dark.getContext('2d').putImageData(this.darkImg, 0, 0);
-    this.light.getContext('2d').putImageData(this.lightImg, 0, 0);
-    var x = this.ctx, s = CFG.CELL * this.dpr;
-    x.globalCompositeOperation = 'source-over';
-    x.drawImage(this.tex, 0, 0);
-    x.imageSmoothingEnabled = true;
-    x.globalCompositeOperation = 'multiply';
-    x.drawImage(this.dark, 0, 0, this.gw, this.gh, -s / 2, -s / 2, this.gw * s, this.gh * s);
-    x.globalCompositeOperation = 'screen';
-    x.drawImage(this.light, 0, 0, this.gw, this.gh, -s / 2, -s / 2, this.gw * s, this.gh * s);
-    x.globalCompositeOperation = 'source-over';
-    if (this.o.wand) this.drawWand();
-  };
-
-  /* the wand from above: steel head square to the shaft, shaft running down to the operator */
-  Carpet.prototype.drawWand = function () {
-    var x = this.ctx, d = this.dpr, h = this.head, W = this.wandW;
-    var ox = this.w * 0.5 + (h.x - this.w * 0.5) * 0.55, oy = this.h + 260;
-    var ang = Math.atan2(oy - h.y, ox - h.x);
-    x.save(); x.scale(d, d);
-    // shadow on the pile
-    x.save(); x.translate(h.x + 5, h.y + 7); x.rotate(ang - Math.PI / 2);
-    x.fillStyle = 'rgba(60,44,24,.22)'; x.beginPath(); x.roundRect ? x.roundRect(-W / 2 - 2, -9, W + 4, 20, 8) : x.rect(-W / 2, -9, W, 20); x.fill();
-    x.restore();
-    x.lineCap = 'round';
-    x.strokeStyle = 'rgba(60,44,24,.2)'; x.lineWidth = 12;
-    x.beginPath(); x.moveTo(h.x + 6, h.y + 8); x.lineTo(ox + 6, oy); x.stroke();
-    // hose, trailing off to the machine
-    x.strokeStyle = '#2a2e35'; x.lineWidth = 6;
-    x.beginPath(); x.moveTo(h.x + (ox - h.x) * .18, h.y + (oy - h.y) * .18);
-    x.bezierCurveTo(ox + 60, h.y + (oy - h.y) * .5, ox + 140, oy - 40, ox + 180, oy); x.stroke();
-    // shaft
-    x.strokeStyle = '#7d8691'; x.lineWidth = 9;
-    x.beginPath(); x.moveTo(h.x, h.y); x.lineTo(ox, oy); x.stroke();
-    x.strokeStyle = '#b9c0c8'; x.lineWidth = 4;
-    x.beginPath(); x.moveTo(h.x - 1, h.y); x.lineTo(ox - 1, oy); x.stroke();
-    // head
-    x.translate(h.x, h.y); x.rotate(ang - Math.PI / 2);
-    var g = x.createLinearGradient(0, -8, 0, 9);
-    g.addColorStop(0, '#d7dce2'); g.addColorStop(0.5, '#a9b1ba'); g.addColorStop(1, '#6f7883');
-    x.fillStyle = g; x.beginPath(); x.roundRect ? x.roundRect(-W / 2, -8, W, 16, 6) : x.rect(-W / 2, -8, W, 16); x.fill();
-    x.fillStyle = '#14346b'; x.beginPath(); x.roundRect ? x.roundRect(-W * 0.18, -5, W * 0.36, 10, 4) : x.rect(-W * 0.18, -5, W * 0.36, 10); x.fill();
-    x.fillStyle = '#3a4048'; x.fillRect(-W / 2 + 5, -9.5, W - 10, 2.5);   // vacuum slot on the leading edge
-    x.restore();
-  };
-
-  /* one loop for every carpet on the page; off-screen carpets sleep */
-  var running = false, last = 0;
-  function frame(now) {
-    var dt = Math.min(0.05, (now - last) / 1000 || 0.016); last = now;
-    var any = false;
-    for (var i = 0; i < carpets.length; i++) {
-      var c = carpets[i];
-      if (!c.visible || !c.w) continue;
-      any = true; c.step(dt); c.draw();
-    }
-    if (any) requestAnimationFrame(frame); else running = false;
-  }
-  function wake() { if (!running && !reduce) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
-
-  function add(canvas, opt) {
-    var c = new Carpet(canvas, opt); carpets.push(c);
-    c.resize(); c.draw();
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(function (es) { c.visible = es[0].isIntersecting; if (c.visible) wake(); }).observe(canvas);
-    }
-    return c;
-  }
-
-  var hint = document.getElementById('hint'), hintGone = false;
-  var floor = document.getElementById('floor');
-  if (floor) {
-    var hero = add(floor, { wand: true, dirt: true, seed: 11, onTouch: function () {
-      if (!hintGone) { hintGone = true; setTimeout(function () { hint && hint.classList.add('gone'); }, 1500); }
-    } });
-    if (reduce) {
-      // still frame, but the visitor can still clean by hand
-      var tick = function () { hero.step(1 / 60); hero.draw(); if (hero.ptr) requestAnimationFrame(tick); else hero.lp = null; };
-      floor.addEventListener('pointerdown', function () { requestAnimationFrame(tick); });
-      floor.addEventListener('pointermove', function () { if (hero.ptr) requestAnimationFrame(tick); });
-    }
-  }
-  // runners after the hero, when the browser is idle
-  (window.requestIdleCallback || setTimeout)(function () {
-    document.querySelectorAll('.js-runner').forEach(function (cv, k) { add(cv, { prestripe: true, napK: 0.16, seed: 23 + k * 7 }); });
-    wake();
+/* ===== Quote form: composes a text to Vincent ===== */
+(function(){
+  var form=document.getElementById('quoteForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  function picked(){return [].map.call(form.querySelectorAll('input[name=what]:checked'),function(b){return b.value})}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&(e.target.type==='checkbox'?e.target.checked:e.target.value.trim()))f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),where=val('where'),more=val('more'),what=picked();
+    var noWhat=!what.length&&!more;
+    document.getElementById('f-what').classList.toggle('bad',noWhat);
+    document.getElementById('f-name').classList.toggle('bad',!name);
+    document.getElementById('name').setAttribute('aria-invalid',name?'false':'true');
+    if(noWhat){document.getElementById('c1').focus();return}
+    if(!name){document.getElementById('name').focus();return}
+    var msg='Hi Vincent, this is '+name+'. I found your website and would like a quote';
+    msg+=what.length?' for: '+what.join(', ')+'.':'.';
+    if(where)msg+=' Town: '+where+'.';
+    if(more)msg+=' '+more;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (desktop, some in-app browsers), say what to do instead
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
   });
+})();
 
-  var rt;
-  window.addEventListener('resize', function () {
-    clearTimeout(rt);
-    rt = setTimeout(function () { carpets.forEach(function (c) { if (c.resize()) c.draw(); }); }, 150);
-  });
-  wake();
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
 })();
 </script>
 </body>
