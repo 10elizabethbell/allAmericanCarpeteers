@@ -4,126 +4,6 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "cream-palette",
-        "value": "rgb(246, 241, 231)",
-        "createdAt": "2026-10-18T15:43:49.997Z",
-        "reason": "agent decision (both Impeccable reviewers agreed): cream is the room's wall in the carpet-room hero, named in the direction contract"
-      },
-      {
-        "rule": "all-caps-body",
-        "value": "*",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-18T15:43:50.069Z",
-        "reason": "agent decision: 35-char footer tagline 'Cleaning · Restoration · Floor Care' copied from the business's flyer"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(185, 198, 226)",
-        "createdAt": "2026-10-18T15:48:41.742Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(159, 176, 210)",
-        "createdAt": "2026-10-18T15:48:41.812Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(143, 159, 192)",
-        "createdAt": "2026-10-18T15:48:41.880Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#ffd0d8",
-        "createdAt": "2026-10-18T15:48:41.950Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "19px",
-        "createdAt": "2026-10-18T15:48:42.022Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "20px",
-        "createdAt": "2026-10-18T15:48:42.092Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "34px",
-        "createdAt": "2026-10-18T15:48:42.161Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "46px",
-        "createdAt": "2026-10-18T15:48:42.231Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "104px",
-        "createdAt": "2026-10-18T15:48:42.300Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "44px",
-        "createdAt": "2026-10-18T15:48:42.369Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "16px",
-        "createdAt": "2026-10-18T15:48:42.442Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "14px",
-        "createdAt": "2026-10-18T15:48:42.512Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "24px",
-        "createdAt": "2026-10-18T15:48:42.580Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "84px",
-        "createdAt": "2026-10-18T15:48:42.653Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "140px",
-        "createdAt": "2026-10-18T15:48:42.724Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "30px",
-        "createdAt": "2026-10-18T15:48:42.795Z",
-        "reason": "agent decision: shipped one-off value; DESIGN.md was derived from this page and the documenter deliberately left single-use values out of the system"
-      },
-      {
-        "rule": "cream-palette",
-        "value": "*",
-        "files": [
-          "index.html"
-        ],
-        "createdAt": "2026-10-19T23:34:04.041Z",
-        "reason": "agent decision (both Impeccable reviewers agreed): cream #f6f1e7 is the room's wall in the carpet-room hero; the value-keyed ignore didn't match this rule"
-      },
-      {
         "rule": "repeating-stripes-gradient",
         "value": "*",
         "files": [
@@ -131,6 +11,27 @@
         ],
         "createdAt": "2026-10-20T02:34:33.179Z",
         "reason": "Ellie's house rule (calm-photo-style.md item 2, 2026-10-19): faint 135deg band texture on deep-navy bands is required"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-20T12:01:20.886Z",
+        "reason": "agent decision: radius of the global :focus-visible ring, browser surface, not a component shape"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-20T12:01:20.953Z",
+        "reason": "agent decision: owner name and desktop step titles, inside DESIGN.md's documented 20-24px title range"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T12:01:21.024Z",
+        "reason": "agent decision: the cluster is the 14-20px body/label ramp; display sizes run 30-80px (H1 80, H2 48, big phone 52), so hierarchy is not flat"
       }
     ]
   }

@@ -1,284 +1,329 @@
 ---
 name: All American Carpeteers LLC
-description: A one-room pitch site where the hero is a carpet you clean yourself.
+description: A calm band pitch site in the flyer's flag navy and red, built to get a text to Vincent.
 colors:
+  paper: "#f4f6fb"
+  card-white: "#ffffff"
+  field-mist: "#e6ecf5"
+  deep-navy: "#0e2752"
   flag-navy: "#14346b"
-  navy-deep: "#0e2752"
+  body-slate: "#26364c"
+  soft-slate: "#4a5868"
+  on-dark: "#f4f7fb"
+  on-dark-soft: "#c9d7ea"
   flag-red: "#c8102e"
-  red-deep: "#a50d26"
-  wall-cream: "#f6f1e7"
-  paper: "#fffdf8"
-  ink: "#1c2433"
-  ink-soft: "#4a5468"
-  pile-oatmeal: "#d3c7b1"
-  rule-cream: "#e6dfd1"
-  arrow-well: "#ece6da"
-  on-navy: "#e9eef8"
-  white: "#ffffff"
+  flag-red-deep: "#a80d27"
+  red-lite: "#ff6670"
+  error-red: "#b3261e"
+  hairline: "rgba(14,39,82,.12)"
 typography:
   display:
-    fontFamily: "\"Avenir Next Condensed\", \"Arial Narrow\", \"sans-serif-condensed\", system-ui, sans-serif"
-    fontSize: "clamp(64px, 20.5vw, 148px)"
-    fontWeight: 800
-    lineHeight: 0.88
-    letterSpacing: "0.005em"
-  slogan-lead:
-    fontFamily: "\"Avenir Next Condensed\", \"Arial Narrow\", \"sans-serif-condensed\", system-ui, sans-serif"
-    fontSize: "clamp(25px, 7.4vw, 40px)"
-    fontWeight: 700
-    lineHeight: 1.05
-    letterSpacing: "0"
-  headline:
-    fontFamily: "\"Avenir Next Condensed\", \"Arial Narrow\", \"sans-serif-condensed\", system-ui, sans-serif"
-    fontSize: "clamp(36px, 10vw, 64px)"
-    fontWeight: 800
-    lineHeight: 0.95
-    letterSpacing: "0.005em"
-  title:
-    fontFamily: "\"Avenir Next Condensed\", \"Arial Narrow\", \"sans-serif-condensed\", system-ui, sans-serif"
-    fontSize: "22px"
-    fontWeight: 800
-    lineHeight: 0.95
-    letterSpacing: "0.005em"
-  numeral:
-    fontFamily: "\"Avenir Next Condensed\", \"Arial Narrow\", \"sans-serif-condensed\", system-ui, sans-serif"
-    fontSize: "58px"
-    fontWeight: 800
-    lineHeight: 0.8
-  lede:
-    fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
-    fontSize: "clamp(18px, 4.8vw, 21px)"
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(42px, 12vw, 80px)"
     fontWeight: 400
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    lineHeight: 1.02
+    letterSpacing: "-0.005em"
+  headline:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(30px, 7.6vw, 48px)"
+    fontWeight: 400
+    lineHeight: 1.08
+    letterSpacing: "-0.005em"
+  phone-display:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(30px, 9vw, 52px)"
+    fontWeight: 400
+    lineHeight: 1
+  title:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(20px, 5.4vw, 24px)"
+    fontWeight: 400
+    lineHeight: 1.15
+  row-title:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(18px, 4.9vw, 20px)"
+    fontWeight: 400
+    lineHeight: 1.2
+  label:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
     fontSize: "17px"
     fontWeight: 400
-    lineHeight: 1.55
-  row:
-    fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    lineHeight: 1.2
+  button:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
     fontSize: "18px"
-    fontWeight: 600
-  label:
-    fontFamily: "system-ui, -apple-system, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontWeight: 400
+    lineHeight: 1
+  lede:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(17px, 4.6vw, 19px)"
+    fontWeight: 400
+    lineHeight: 1.7
+  body:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.7
+  small:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
     fontSize: "15px"
     fontWeight: 400
-    letterSpacing: "0.08em"
+    lineHeight: 1.4
 rounded:
-  focus: "6px"
-  button: "12px"
-  round: "50%"
+  field: "10px"
+  row-card: "20px"
+  card: "24px"
+  pill: "999px"
+  circle: "50%"
 spacing:
   gutter: "20px"
   gutter-wide: "40px"
   section: "64px"
   section-wide: "96px"
-  container: "1180px"
+  stack-sm: "16px"
+  stack-md: "28px"
+  stack-lg: "36px"
+  column-gap: "64px"
 components:
   button-primary:
     backgroundColor: "{colors.flag-red}"
-    textColor: "{colors.white}"
-    rounded: "{rounded.button}"
+    textColor: "{colors.card-white}"
+    typography: "{typography.button}"
+    rounded: "{rounded.pill}"
     padding: "0 26px"
-    height: "58px"
+    height: "56px"
   button-primary-hover:
-    backgroundColor: "{colors.red-deep}"
+    backgroundColor: "{colors.flag-red-deep}"
+    textColor: "{colors.card-white}"
   button-ghost:
     backgroundColor: "transparent"
-    textColor: "{colors.flag-navy}"
-    rounded: "{rounded.button}"
+    textColor: "{colors.on-dark}"
+    typography: "{typography.button}"
+    rounded: "{rounded.pill}"
     padding: "0 26px"
-    height: "58px"
-  button-ghost-hover:
-    backgroundColor: "{colors.flag-navy}"
-    textColor: "{colors.white}"
-  phone-link:
-    textColor: "{colors.flag-navy}"
-    typography: "{typography.title}"
-    height: "44px"
+    height: "56px"
+  input-field:
+    backgroundColor: "{colors.field-mist}"
+    textColor: "{colors.deep-navy}"
+    typography: "{typography.body}"
+    rounded: "{rounded.field}"
+    padding: "13px 14px"
+    height: "52px"
+  chip:
+    backgroundColor: "{colors.field-mist}"
+    textColor: "{colors.deep-navy}"
+    typography: "{typography.body}"
+    rounded: "{rounded.pill}"
+    padding: "0 16px"
+    height: "46px"
+  chip-selected:
+    backgroundColor: "{colors.deep-navy}"
+    textColor: "{colors.card-white}"
+  form-card:
+    backgroundColor: "{colors.card-white}"
+    textColor: "{colors.body-slate}"
+    rounded: "{rounded.card}"
+    padding: "clamp(20px, 5vw, 32px)"
+  link-row-card:
+    backgroundColor: "{colors.card-white}"
+    textColor: "{colors.deep-navy}"
+    typography: "{typography.row-title}"
+    rounded: "{rounded.row-card}"
+    padding: "14px 16px 14px 22px"
+    height: "72px"
   service-row:
     backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    typography: "{typography.row}"
-    padding: "8px 0"
-    height: "60px"
-  service-arrow:
-    backgroundColor: "{colors.arrow-well}"
-    textColor: "{colors.flag-navy}"
-    rounded: "{rounded.round}"
-    size: "38px"
-  service-arrow-hover:
+    textColor: "{colors.on-dark}"
+    typography: "{typography.row-title}"
+    padding: "10px 0"
+    height: "64px"
+  arrow-disc-active:
     backgroundColor: "{colors.flag-red}"
-    textColor: "{colors.white}"
+    textColor: "{colors.card-white}"
+    rounded: "{rounded.circle}"
+    size: "44px"
+  step-number:
+    backgroundColor: "{colors.flag-red}"
+    textColor: "{colors.card-white}"
+    rounded: "{rounded.circle}"
+    size: "48px"
+  float-circle:
+    backgroundColor: "{colors.flag-red}"
+    textColor: "{colors.card-white}"
+    rounded: "{rounded.circle}"
+    size: "60px"
 ---
 
 # Design System: All American Carpeteers LLC
 
 ## Overview
 
-**Creative North Star: "The Freshly Cleaned Room"**
+**Creative North Star: "The Flag-Folded Flyer"**
 
-The page is one room seen from the doorway: a warm cream wall at the top, a white baseboard, and wall-to-wall carpet below it. Everything above the baseboard is the business talking (who, the slogan, how to reach Vincent). Everything below is the trade itself, simulated: soiled pile that a steel cleaning wand works in pull strokes, each stripe laid down wet and drying bright, with the soil slowly creeping back so there is always more to clean. A finger or mouse can take the wand. Bound carpet runners recur between sections as the carried motion, so the room keeps going as you scroll.
+The page is the owner's flyer put in calm order: off-white paper bands alternate with the flyer's flag navy, and flag red is the one warm voice. Each band does one job (who and where, how we treat your home, what we clean, how it works, ask for a quote, call), stacked in a single phone-width column that opens into two columns on desktop. Nothing is there to decode; a homeowner scrolling inside Facebook's in-app browser should find their job and text Vincent without a second look.
 
-The voice is a straightforward trades pitch with a patriotic sign-off. Flag navy and flag red come straight from the client's flyer and star mark; they sit on cream and paper, never on black. Type is heavy, condensed and uppercase for headings (the flyer's lettering, on a system font stack by house rule), with plain sentence-case body underneath. Density is phone-first: single column, large tap targets, every action a text message or call.
+The house calm band style sets the grammar: full pill buttons, rounded white cards only where something is filled in, hairline-divided rows instead of boxed cards, a rounded display face (Cal Sans at weight 400) over a system body. Depth comes from band colour and a faint diagonal line texture on the navy bands, not from shadows. The only motion is the hero H1 bouncing in letter by letter and a 12px fade-up for content below the first screen.
 
-Depth is physical rather than decorative: the baseboard and runners cast short warm shadows onto the floor, and the primary button carries a soft red glow. Nothing else floats.
+There are no photos. The flyer's before/after pairs are about 210px wide, show different subjects before and after, and are not real work, so the build uses band colour, the rebuilt star mark and line icons instead.
 
 **Key Characteristics:**
-- Room composition at every width: wall above, baseboard, carpet floor below.
-- Flag navy + flag red on cream and paper; navy fields for the "our voice" section and footer.
-- Heavy condensed uppercase display, plain sentence-case body, system fonts only.
-- A live canvas carpet is the signature; runners repeat it as section dividers.
-- Texting is the main door: one filled red "Text for a quote" button, everything else outlined or text.
+- Paper and navy bands, flag red as the single accent
+- Cal Sans 400 display, system sans body at 16/1.7
+- Pills for actions, 24px cards for the form, hairline rows for lists
+- Faint 135-degree line texture on navy bands as the only surface detail
+- Flat: one shadow in the system, on the floating text circle
+- Motion limited to the hero H1 bounce-in and a 12px fade-up, both off for reduced motion and no JS
 
 ## Colors
 
-A two-flag palette (navy carries structure, red carries action) set on a warm cream room.
+Flag navy and flag red from the flyer on cool off-white paper; red is rationed so it always means "act here".
 
 ### Primary
-- **Flag Navy** (`flag-navy`): Headings, wordmark, header phone number, ghost-button border and text, the group rule under each service group, runner bindings, the full-bleed "how we treat your home" field, and the blue band on the wand head. The structural color of the site.
-- **Deep Navy** (`navy-deep`): Footer field and the stripe inside the reversed footer star. Only ever a darker floor under navy-adjacent content.
+- **Flag Navy** (`flag-navy`): the flyer's navy. Hero band (with line texture) and the services band. Also the focus and hover outline colour on light surfaces, chosen so focus never reads as the red fill. Fills the star in the wordmark.
+- **Deep Navy** (`deep-navy`): two jobs at one value. As a surface it is the quote and footer band, always with the line texture. As ink it is every heading, label and selected chip on light surfaces.
 
 ### Secondary
-- **Flag Red** (`flag-red`): Action and emphasis. The primary button fill, the slogan lead-in, step numerals, the star bullets, the phone icon, the hover state of service-row arrows and text links, and the focus ring.
-- **Deep Red** (`red-deep`): Primary-button hover only.
+- **Flag Red** (`flag-red`): primary button fill, step numbers, the floating text circle, the arrow disc on hover/focus, icon strokes on light (claims, phone glyphs), the inline "Text and ask." link, and text selection. Always paired with white text when it is a fill (5.9:1). Red text sits on light surfaces only (5.4:1).
+- **Flag Red Deep** (`flag-red-deep`): primary button hover fill. Nowhere else.
+- **Red Lite** (`red-lite`): red as display text on navy only: the accent last phrase of a dark-band heading (4.3:1, large text only), the eyebrow dot on dark bands, and footer link hover (5.2:1).
 
 ### Neutral
-- **Wall Cream** (`wall-cream`): The room's wall. Page background, header, hero copy, the "How it works" and close sections. Also the browser `theme-color`.
-- **Paper** (`paper`): Lifted reading surfaces: the services list, the runner bay beneath it, and the service-area section. Alternates with wall cream to pace the scroll.
-- **Ink** (`ink`): Body text and service-row labels.
-- **Soft Ink** (`ink-soft`): Supporting copy: the promise, row sub-lines, step details, the close paragraph, the drag hint.
-- **Pile Oatmeal** (`pile-oatmeal`): Base color of every carpet (hero floor and runners) and the canvas fallback background. The carpet's own tuft shades (`#bfb299` to `#f1eadc`) live inside the simulation and are not page colors.
-- **Rule Cream** (`rule-cream`): 1px dividers between service rows.
-- **Arrow Well** (`arrow-well`): Resting fill of the round arrow in each service row.
-- **On-Navy** (`on-navy`): Body and lede text on the navy field. Headings and list items on navy are pure white.
+- **Paper** (`paper`): page ground, header, and the light bands. Also the `theme-color`.
+- **Card White** (`card-white`): the quote form card and the Facebook link row; text on every red fill.
+- **Field Mist** (`field-mist`): text inputs, textarea and unselected chips inside the white form card.
+- **Body Slate** (`body-slate`): running text on light.
+- **Soft Slate** (`soft-slate`): ledes, secondary lines, placeholders, step descriptions, optional markers.
+- **On Dark** (`on-dark`): headings, row titles and ghost button text on navy.
+- **On Dark Soft** (`on-dark-soft`): running text and row sub-lines on navy.
+- **Hairline** (`hairline`): dividers between rows on light. On navy the divider is `rgba(255,255,255,.12)`.
+- **Error Red** (`error-red`): field error text and invalid-field borders. Distinct from the brand red so an error never looks like a button.
 
 ### Named Rules
-**The Cream Wall Rule.** Light surfaces are wall cream or paper; there is no dark mode and no black field. The darkest surface is deep navy, and only in the footer.
+**The White-on-Red Rule.** Flag red as a fill always carries white text. Navy on red fails contrast and is never used.
 
-**The One Red Door Rule.** Exactly one filled red button per view: "Text for a quote". Every other button is a navy ghost. Red elsewhere is small: numerals, star bullets, icons, hover and focus.
+**The Lite-Red-Is-Large Rule.** Red Lite appears on navy only, and only as display-size text (the heading accent phrase), a dot, or a footer hover. Never body text, never on paper.
+
+**The Accent-Means-Act Rule.** Red marks actions and the path to them: the quote button, the text circle, step numbers, the active arrow, phone glyphs. Decoration does not get red.
 
 ## Typography
 
-**Display Font:** Avenir Next Condensed (with Arial Narrow, `sans-serif-condensed`, system-ui fallback), always `font-stretch: condensed`
-**Body Font:** system-ui (with -apple-system, Segoe UI, Helvetica Neue, Arial)
+**Display Font:** Cal Sans (with Avenir Next, Segoe UI, system-ui)
+**Body Font:** system sans (-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial)
 
-**Character:** The display is the flyer's lettering: heavy, condensed, uppercase, tightly leaded, set in navy like a truck door. The body is the phone's own font, plain and sentence case, so it reads like a text from Vincent.
+**Character:** Cal Sans is round, friendly and confident at a single weight; it carries every heading, label, button, row and phone number so the page reads as one voice. The system body keeps paragraphs fast and familiar.
 
 ### Hierarchy
-- **Display** (800, clamp(64px, 20.5vw, 148px) on phones, clamp(84px, 9.2vw, 140px) at 900px+, 0.88): "We clean it." Only the hero slogan.
-- **Slogan Lead** (700 italic, clamp(25px, 7.4vw, 40px), 1.05, sentence case, red): "If you walk or sit on it," set directly above the display as the first half of the same sentence. The italic condensed voice also signs Vincent's name (34px, white) on the navy field.
-- **Headline** (800, clamp(36px, 10vw, 64px), 0.95, uppercase, navy): Section headings. The service-area place name (clamp(46px, 14vw, 104px)) and the closing line (clamp(44px, 13vw, 96px)) are the two sanctioned oversize headlines.
-- **Title** (800, 22px, uppercase, navy): Service group names, each underlined by a 2px navy rule. The header phone number uses the same condensed 800 at 19px (24px at 900px+).
-- **Numeral** (800, 58px, 0.8, red): Step counters in "How it works".
-- **Lede** (400, clamp(18px, 4.8vw, 21px), 1.5, max 30-34em): Opening paragraph of a section. The hero promise runs a step smaller (clamp(17px, 4.6vw, 20px), 1.45).
-- **Body** (400, 17px, 1.55): Everything else. `text-wrap: pretty` on paragraphs, `balance` on headings.
-- **Row** (600, 18px): Service row labels; optional 15px/400 soft-ink sub-line.
-- **Label** (400, 14-15px, 0.08em, uppercase): Only for the owner's role under his signature and the flyer's tagline in the footer. Never above a heading.
+- **Display** (400, clamp 42-80px, line-height 1.02, max 12ch): the hero H1 only, in white, with its last phrase in Red Lite.
+- **Headline** (400, clamp 30-48px, 1.08): section H2s. On dark bands the last phrase may be in Red Lite.
+- **Phone Display** (400, clamp 30-52px, 1): the closing tap-to-call number, with a red phone glyph at 0.8em.
+- **Title** (400, clamp 20-24px, 1.15): claims list items and service group H3s (24px).
+- **Row Title** (400, clamp 18-20px, 1.2): service rows and the Facebook row. Step titles run 21px (22px desktop) in the same face.
+- **Label** (400, 17px, 1.2): form labels and legends, header wordmark (17/19/22px by width) and header phone (17px, 20px desktop).
+- **Button** (400, 18px, 1): all pill buttons.
+- **Lede** (400, clamp 17-19px, 1.7, max 38ch): the paragraph under a section heading. The hero promise is the same family at clamp 17-20px, line-height 1.5, max 30ch.
+- **Body** (400, 16px, 1.7): running text and every input (16px so iOS does not zoom).
+- **Small** (400, 15px, 1.4): row sub-lines, owner role, error text, form footnote.
 
 ### Named Rules
-**The Shout and Say Rule.** Headings shout (condensed, 800, uppercase); everything else says (system body, sentence case). Nothing in between: no light display weights, no uppercase body paragraphs.
+**The One-Weight Display Rule.** Cal Sans is used at 400 only; hierarchy comes from size, never from faux bold.
 
-**The House Fonts Rule.** No webfonts. Display and body are system stacks by Ellie's pitch-site rules; the condensed character comes from `font-stretch` and the stack order, not a download.
+**The Balanced Heading Rule.** Headings use `text-wrap: balance` and tight line-height (1.02-1.08) with -0.005em tracking.
 
 ## Layout
 
-Phone-first single column inside a 1180px container with a 20px gutter (40px at 900px+). Sections pad 64px top and bottom (96px at 900px+). Section backgrounds alternate wall cream, paper and navy to pace the scroll; runner strips sit at two of the seams.
+Single column at phone width inside a 1160px max container with a 20px gutter (40px from 760px). Sections pad 64px top and bottom, 96px from 760px; the hero pads 56/68px, 96/112px on desktop. Section heads stack on a 16px gap with a 640px measure.
 
-The hero is a fixed room stack at every width: header (68px, 84px at 900px+), hero copy, an 18px baseboard, then the floor at clamp(270px, 46svh, 470px) (clamp(320px, 44svh, 520px) at 900px+). At 900px+ the hero copy splits 1.15fr / 1fr with the slogan left and the promise and actions bottom-aligned right; the floor stays full-bleed.
+Breakpoints: 359px and below hides the star and phone glyph in the header; 400px enlarges the wordmark; 760px widens gutter and section padding, puts hero buttons side by side (240px min) and service groups in two columns (64px gap); 1024px splits the care band (copy left, claims right), puts the quote heading in a sticky left column beside the form (1fr / 1.2fr), aligns the closing band as name left and big phone right, and lays the three steps in a row.
 
-Breakpoints: 600px (action buttons go side by side, min-width 230px), 900px (two-column sections, services flow into two CSS columns with 56px gap, footer becomes 1.4fr / 1fr / 1fr), and a sub-360px tightening that drops the phone icon and shrinks the mark.
-
-Tap targets are at least 44px everywhere (header links, footer links, inline text links get 11px vertical padding); buttons are 58px and rows 60px.
-
-### Named Rules
-**The Room Order Rule.** Wall above, baseboard, carpet below, at every width. The floor is never moved beside the copy or cropped into a card.
-
-**The Static Header Rule.** The header scrolls away with the page. No sticky bar, no floating call button; the reach-out moments are the hero, the service rows and the close.
+Rhythm: 16px inside stacks, 28px before lists and cards, 36px before groups and steps, 64px between desktop columns. Tap targets are at least 44px everywhere; the header respects safe-area insets and the footer reserves 96px at the bottom so the text circle never covers content.
 
 ## Elevation & Depth
 
-Flat by default. Depth exists only where the room is physical: the baseboard and runners throw short, warm-brown shadows onto what is below them, and the wand casts its own shadow on the pile inside the canvas. The primary button carries a soft red under-glow so the one red door reads as pressable. No cards, no hover lifts.
+Flat. Depth is band colour (paper, flag navy, deep navy) plus the line texture on navy surfaces. Cards are white on deep navy or paper with no shadow; the Facebook row and service rows explicitly suppress shadows on hover and focus.
 
 ### Shadow Vocabulary
-- **Baseboard cast** (`box-shadow: 0 5px 7px -2px rgba(60,45,25,.28)`): Under the baseboard, onto the floor. Paired with a vertical gradient (#fff to #fbf8f2 to #e9e2d4) that gives the board its rounded top.
-- **Runner cast** (`box-shadow: 0 3px 5px -1px rgba(60,45,25,.3)`): Under each runner strip.
-- **Red glow** (`box-shadow: 0 6px 16px -6px rgba(200,16,46,.55)`): Primary button only.
+- **Float lift** (`box-shadow: 0 10px 28px rgba(8,24,46,.3)`): the floating text circle only, because it sits over moving content.
 
 ### Named Rules
-**The Warm Shadow Rule.** Shadows are warm brown (rgb 60,45,25), short and soft, and only fall from room objects. Never grey, never hard-offset, never on content boxes.
+**The Line-Texture Rule.** Navy bands that frame the page (hero, quote, footer) carry `repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`. The services band stays plain flag navy so its rows read cleanly. Paper bands are never textured.
+
+**The One-Shadow Rule.** The text circle is the only element with a shadow.
 
 ## Shapes
 
-Gently rounded action shapes (12px buttons), perfect circles for row arrows (38px), and square edges for everything architectural: baseboard, runners, section fields and rules are all straight-edged and full-bleed. Rules are navy 2px under group titles, rule-cream 1px between rows, and 7px navy bindings top and bottom on runners. The star mark (navy star clipped with a white and a red stripe) is the only emblem; on navy it inverts to a white star with a deep-navy stripe, and plain red stars serve as list bullets. Icons are 22px stroke SVGs (2px, round caps and joins) in `currentColor`; brand icons are filled.
+Soft and round throughout. Actions are full pills (999px): buttons, chips. Fill-in surfaces are rounded rectangles: the form card at 24px, the Facebook row at 20px, inputs at 10px. Indicators are circles: the 44px arrow disc, 48px step numbers, the 60px text circle. Lists use 1px hairline dividers rather than boxes. Line icons are 2.2-2.6px rounded strokes. The brand mark is the flyer's five-point star with a white and a red diagonal stripe clipped inside it.
 
 ## Components
 
 ### Buttons
-Big, plain and thumb-sized.
-- **Shape:** gently rounded (12px), 2px border, 58px tall, 26px side padding, 800 18px system font (not the display face), optional 22px leading icon.
-- **Primary:** flag red fill and border, white text, red glow. Used only for "Text for a quote".
-- **Hover / Focus:** primary deepens to red-deep; ghost fills navy with white text. Colors ease over .18s; press nudges down 1px and scales to .99 with `cubic-bezier(.2,.8,.2,1)`. Focus is the global 3px red outline at 3px offset with 6px radius.
-- **Ghost:** transparent with navy border and text. On the navy field it becomes white-bordered and fills white with navy text on hover (the Facebook button).
+Round, plain, and big enough to hit with a thumb.
+- **Shape:** full pill, 56px tall, 26px side padding, 2px border, Cal Sans 18px; optional 20px leading icon.
+- **Primary:** flag red fill, white text. Hover (pointer devices only): flag red deep. In the form it is full width and gains a 3px flag navy outline at 3px offset on hover and focus.
+- **Ghost (dark bands only):** transparent with a 70% on-dark border and on-dark text; hover goes to a white border and 10% white fill.
+- **Press:** scales to 0.98 over 120ms. Colour changes take 200ms.
+
+### Chips
+- **Style:** checkbox chips in the quote form. Field mist pill, 46px tall, 16px padding (13px at 380px and below), system 16px deep navy text, 2px transparent border.
+- **State:** hover and keyboard focus draw a flag navy border; selected is deep navy fill with white text; selected plus focus adds a 3px outline. The real checkbox is visually hidden, not removed.
+
+### Cards / Containers
+- **Quote form card:** white, 24px radius, clamp 20-32px padding, 20px internal gap, max 600px, no border, no shadow. Sits on the deep navy band.
+- **Link row card (Facebook):** white, 20px radius, 72px tall, max 440px, label with a 28px navy icon on the left, arrow disc on the right.
+
+### Inputs / Fields
+- **Style:** field mist fill, 10px radius, 2px transparent border, 52px min height (textarea 110px, vertical resize), 16px system text in deep navy, navy caret, soft slate placeholder.
+- **Focus / hover:** border turns flag navy (150ms); no glow.
+- **Error:** border and a 15px message in error red, shown only after submit. Messages use `role="alert"`; the first failing field takes focus.
 
 ### Navigation
-- **Header:** wordmark (star mark plus two stacked condensed uppercase lines, small "LLC") top-left; the phone number with a red phone icon top-right, condensed 800 navy, red on hover. No menu, no other header links.
-- **Footer:** deep navy field, reversed wordmark, the flyer tagline as a label, phone and Facebook as 44px white links (hover to a pale pink tint), and a fine-print line.
+- **Header:** paper bar, 64px (76px desktop). Star wordmark left (two stacked Cal Sans lines, small spaced "LLC"), tap-to-call number right with a red phone glyph; number turns red on hover. No menu.
+- **Footer:** deep navy with line texture, on-dark-soft 16px text, on-dark links at 44px height, Red Lite on hover.
 
-### Service Rows
-A list of text links, each one opening a pre-filled text message for that service.
-- **Rest:** full-width row, 60px min height, 18px 600 ink label, optional 15px soft-ink sub-line, 1px rule-cream divider, and a 38px arrow-well circle holding a navy arrow on the right.
-- **Hover / Focus:** only the arrow changes: it fills red, the arrow turns white, and it slides 3px right (.25s `cubic-bezier(.2,.8,.2,1)`). The row's own background, outline and shadow stay untouched; keyboard focus draws the red ring around the arrow, not the row.
-- **Groups:** a 22px navy title with a 2px navy rule beneath, rows below; two CSS columns at 900px+, groups never split.
+### Claims List
+Three Cal Sans lines on paper, each led by a 40px red line icon, separated by hairlines. Points, not cards.
 
-### Steps
-Numbered list with a 58px red condensed numeral spanning two lines on the left, a 19px bold navy step line and a soft-ink detail on the right.
+### Service Arrow Rows (signature)
+Lists of jobs on flag navy grouped under 24px H3s. Each row is a 64px link: row title on the left (optional 15px on-dark-soft sub-line), a 44px arrow disc on the right at 10% white. On hover or focus only the disc changes, to flag red with white arrow (focus adds a 3px white outline); the row itself never gets a background or shadow. Tapping a row ticks the matching chip in the quote form and, where rows share a chip, appends a note naming the job to the textarea.
 
-### Carpet Floor (signature)
-A canvas simulation that fills the hero floor below the baseboard.
-- **Pile:** a texture drawn once per size: oatmeal base, soft mottling, and thousands of small tufts in seven warm shades. Soil is a multiply layer (traffic lane through the lower middle, noise mottling, a few stains, speckle) tinted warm brown; wet is a cool multiply tint; nap laid away from you darkens, nap laid toward you brightens through a screen layer.
-- **Wand:** drawn from above: a steel-gradient head (16px deep, 6px corners) square to a steel shaft that runs off the bottom edge to an unseen operator, a navy band in the middle of the head, a dark vacuum slot on the leading edge, a dark hose curving away, and a soft warm shadow on the pile. The head is about a fifth of the floor wide, never under 64px.
-- **Self-running:** the wand pulls stripes up and down the floor, lifts at each end, side-steps by 0.86 of a head width, and turns back at the edges, with a slight hand wobble. Pulling up lays the pile light; pushing down lays it dark, which produces the alternating nap stripes. About 40% of the floor is already cleaned before the first paint.
-- **Life cycle:** each pass halves the soil under the head and wets it; the stripe dries over a few seconds; once dry, soil slowly creeps back toward its original pattern and stripes fade very slowly, so the floor never finishes.
-- **Hand control:** a finger drag (any direction) or a hovering mouse takes the wand; the native cursor is hidden over the floor. After the pointer leaves, the wand resumes on its own after a short idle. The first touch fades the "Drag across the carpet to clean it" hint.
-- **Reduced motion:** a still, pre-cleaned frame; the visitor can still clean by hand, and the frame updates only while they do.
-- **Performance:** one shared animation loop for every carpet; off-screen carpets sleep via IntersectionObserver; pixel ratio is capped; mobile address-bar resizes keep the scene.
+### Numbered Steps
+Three steps, each a 48px flag red circle holding a Cal Sans counter, beside a 21px title and a soft slate line. Stacked on phones, three across at 1024px.
 
-**Tunable constants** (`CFG` in the page script):
+### Quote Form (signature)
+Chips, name, optional town, optional note, then "Text this to Vincent". Submitting validates (something picked or written, and a name), then composes the message and opens `sms:` with it as the body. After 900ms a status line appears with the phone number in case no messages app opened. A footnote says the button opens your messages.
 
-| Constant | Value | Effect |
-|---|---|---|
-| `CELL` | 4 | CSS px per simulation cell (soil/wet/nap resolution) |
-| `DPR_MAX` | 1.5 | Pixel-ratio cap for the canvases |
-| `WAND_W` | 124 | Widest wand head in CSS px; actual is min(124, floor width / 5.2), floor 64 |
-| `AUTO_SPEED` | 280 | Self-running wand speed in px/s (x1.4 on floors wider than 900px) |
-| `IDLE_MS` | 2200 | Delay before the wand runs itself again after the pointer leaves |
-| `REGROW` | 0.006 | Per-second rate soil creeps back once a stripe is dry |
-| `DRY_S` | 2.6 | Seconds for a wet stripe to dry |
-| `NAP_RELAX` | 0.012 | Per-second fade of hero nap stripes |
-| `RUNNER_RELAX` | 0.07 | Per-second fade of brushed nap on runners back to their stripes |
-| `BRUSH_R` | 26 | Runner brush radius in px |
+### Closing Band
+Paper band: business name as an H2, the "Cleaning · Restoration · Floor care" line, the service area with an inline red "Text and ask." link, and the Phone Display number with a red glyph.
 
-### Carpet Runner
-A bound runner strip used as a section divider: 58px of the same pile, bound by 7px navy edges top and bottom, with a short warm cast shadow. It is clean (no soil) and pre-striped with soft, slightly wavering alternating bands. An unseen hand brushes along it in a swaying path; a hovering mouse or a touch also brushes, and brushing right lays the pile light. Brushed nap relaxes back to the stripes. Touch still scrolls the page vertically through it. Runners load after the hero, when the browser is idle.
+### Floating Text Circle
+One 60px flag red circle, bottom right inside safe-area insets, white chat icon, Float lift shadow. It slides up from 120px off-screen (350ms, `cubic-bezier(.2,.8,.2,1)`) once the hero is out of view and hides while the quote form or closing band is on screen; when hidden it leaves the tab order and is `aria-hidden`. Removed if IntersectionObserver is missing or the config turns it off. Never a bottom bar.
+
+### Eyebrow Pills (owner exception)
+Three uses, kept because the owner chose LPMR-style eyebrows for the house style on 2026-10-19, against Impeccable's ban on eyebrows. A 14px weight-500 system label in a faint pill (6% navy on paper, 12% white on navy) with a 7px dot (flag red on light, Red Lite on dark). Marked up as `<p>`, never a heading; no arrow, hover or shadow, so it can't read as a button. This records the existing exception; it is not a pattern to add to new surfaces without the owner asking.
+
+### Motion
+- **H1 bounce-in:** JS splits the hero H1 into letters (words kept unbreakable). Each letter slides in from 50px right and fades in over 1s on `cubic-bezier(.34,1.56,.64,1)` (the overshoot is the bounce), staggered 20ms. When the last letter lands the plain heading is restored so kerning and selection return; an `aria-label` carries the text while it is split.
+- **Fade-up:** elements marked to rise are visible at rest. Only those starting below the first screen are set 12px down at opacity 0, then rise over 400ms ease-out as they enter view (8% bottom inset), once.
+- **Reduced motion:** no letter split, no fade-up, no transitions on buttons or the text circle, no smooth scroll.
+- **No JS:** the H1 stays plain and nothing starts hidden, because both the letter split and the below-the-fold hidden state are applied by script; the text circle never appears.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep the room order (wall, 18px baseboard, carpet floor) at every width, with the wand already working on first paint.
-- **Do** put the phone number top-right in the header once; repeat it lower only as a plain text link (close line, footer).
-- **Do** make every quote action a pre-filled `sms:` link to Vincent; reserve the filled red button for "Text for a quote".
-- **Do** set headings in the condensed display stack at 800, uppercase, navy (white on navy), and everything else in the system body stack in sentence case.
-- **Do** alternate wall cream, paper and navy section fields, and use bound runners as the dividers between them.
-- **Do** keep every tap target at least 44px tall; buttons 58px, rows 60px.
-- **Do** honor reduced motion with a still frame that still responds to the visitor's hand.
-- **Do** tune the carpet through `CFG`, not by editing the simulation math.
+- **Do** put white text on every flag red fill, and keep red text on light surfaces only.
+- **Do** keep Red Lite for display-size accent phrases and dots on navy, and footer link hover.
+- **Do** use flag navy for focus and hover outlines on light surfaces and white outlines on dark ones (3px, 3px offset).
+- **Do** alternate paper and navy bands, with the 135-degree line texture on the hero, quote and footer bands.
+- **Do** use Cal Sans 400 for headings, labels, buttons, rows and phone numbers, and the system stack at 16/1.7 for running text.
+- **Do** list jobs as hairline-divided rows where only the arrow disc changes on hover and focus.
+- **Do** keep hover styles inside `@media (hover:hover)` so taps don't leave them stuck.
+- **Do** keep every tap target at least 44px and every input at 16px or larger.
+- **Do** keep motion to the H1 bounce-in and the 12px fade-up, both off under reduced motion and without JS.
 
 ### Don't:
-- **Don't** add a sticky header, sticky call bar or floating action button.
-- **Don't** change a service row's background, border, outline or shadow on hover or focus; only the arrow changes.
-- **Don't** put black or dark-grey fields on the page; the darkest surface is deep navy in the footer.
-- **Don't** load webfonts; the system stacks are the house choice.
-- **Don't** use grey or hard-offset shadows, or shadows on content boxes; shadows fall only from the baseboard, runners, the wand and the one red button.
-- **Don't** put uppercase tracked labels above headings; the label style belongs only to the owner's role line and the flyer tagline.
-- **Don't** show before/after photos, reviews, prices or credentials that the business has not supplied.
+- **Don't** put navy text on a red fill; it fails contrast.
+- **Don't** use Red Lite as body text or on paper.
+- **Don't** use the flyer's before/after images or owner portrait, or stand-in photos; there are no real work photos.
+- **Don't** add shadows beyond the floating text circle.
+- **Don't** give service rows or the Facebook row a hover background or shadow; only the arrow disc changes.
+- **Don't** turn the text circle into a bottom bar or show it over the form or closing band.
+- **Don't** add new eyebrow pills beyond the owner's existing exception.
