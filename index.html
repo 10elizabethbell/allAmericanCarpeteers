@@ -35,7 +35,7 @@
   --on-dark-soft:#c9d7ea;
   --red:#c8102e;         /* flyer red: fills (white text, 5.9:1) and text on light (5.4:1) */
   --red-2:#a80d27;       /* red fill on hover */
-  --red-lite:#ff8597;    /* red as text on navy (5.2:1) */
+  --red-lite:#ff6670;    /* red as display text on navy (4.3:1, large text only) and footer hover (5.2:1) */
   --line:rgba(14,39,82,.12);
   --focus:#14346b;       /* form hover/focus outline, distinct from the red fill */
   --error:#b3261e;
@@ -92,7 +92,7 @@ section{padding:64px 0}
 .brand span{display:flex;flex-direction:column;line-height:1}
 .brand b{font:400 17px/1 var(--display);letter-spacing:.01em;white-space:nowrap}
 .brand b+b{margin-top:2px}
-.brand small{font:600 10px/1 var(--text);letter-spacing:.08em;margin-left:4px;color:var(--soft)}
+.brand small{font:600 11px/1 var(--text);letter-spacing:.08em;margin-left:4px;color:var(--soft)}
 .tel{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:18px;height:18px;flex:none;color:var(--red)}
 @media (max-width:359px){.brand svg{display:none}.tel svg{display:none}}
@@ -127,7 +127,7 @@ section{padding:64px 0}
 
 /* ---------- Services: rows on navy, only the arrow changes ---------- */
 .groups{display:grid;gap:36px;margin-top:36px}
-.group h3{font-size:21px;color:var(--on-dark);margin-bottom:6px}
+.group h3{font-size:24px;color:var(--on-dark);margin-bottom:6px}
 .rows{list-style:none;margin:0;padding:0}
 .rows li+li{border-top:1px solid rgba(255,255,255,.12)}
 .row{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:64px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(18px,4.9vw,20px)/1.2 var(--display)}
@@ -176,7 +176,7 @@ form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3p
 .bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--ink);min-height:56px;white-space:nowrap}
 .bigtel svg{width:.8em;height:.8em;flex:none;color:var(--red)}
 .area{margin-top:22px;max-width:40ch}
-.area a{color:var(--red);font-weight:600;display:inline-block;padding:10px 0;margin:-10px 0}
+.area a{color:var(--red);font-weight:600;text-underline-offset:3px;display:inline-block;padding:10px 0;margin:-10px 0}
 
 /* ---------- Footer ---------- */
 footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
@@ -246,10 +246,10 @@ footer a:hover{color:var(--red-lite)}
 <body>
 <!--
 THESIS: A one-man (or small-crew) floor and fabric cleaner earns trust through calm order (after lpmr.co.uk): one claim (cleaner, fresher homes in Randolph), his own slogan, three plain points, and an easy way to text Vincent.
-OWN-WORLD: Off-white paper, the flyer's flag navy (#14346b) and deep navy (#0e2752, faint diagonal lines) bands, flag red (#c8102e) as the one warm accent: a fill with white text, red text on light, a lighter red (#ff8597) as text on navy. Star mark from the flyer. Cal Sans display, system body at 16/1.7.
+OWN-WORLD: Off-white paper, the flyer's flag navy (#14346b) and deep navy (#0e2752, faint diagonal lines) bands, flag red (#c8102e) as the one warm accent: a fill with white text, red text on light, a lighter red (#ff6670) as display text on navy. Star mark from the flyer. Cal Sans display, system body at 16/1.7.
 STORY: The visitor sees who cleans carpets and floors in Randolph, reads how they treat the home, finds their job in the list, and texts Vincent a quote request.
 FIRST VIEWPORT: Paper header with star wordmark left and tap-to-call number top right. Navy textured hero: eyebrow, "Cleaner, fresher homes in Randolph.", the flyer slogan as the promise, two pill buttons (Get a quote, Text Vincent).
-FORM: calm band system without photos (the flyer's before/afters are ~210px wide and don't show the same subject); the earlier carpet-wand world is in git history (0054f3f).
+FORM: no concept roll; direction set by the house calm band style (calm-photo-style.md). Calm band system without photos (the flyer's before/afters are ~210px wide and don't show the same subject); the earlier carpet-wand world is in git history (0054f3f).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, DESIGN.md and HANDOFF.md
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -286,7 +286,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap split">
     <div class="rise">
       <h2 id="h-care">We clean your home like it's our own.</h2>
-      <p class="lede" style="margin-top:16px">The couch is where your family sits and the rug is where the kids play, so we treat them that way. Quality workmanship, dependable service, and a home that's cleaner, fresher and healthier.</p>
+      <p class="lede" style="margin-top:16px">The couch is where your family sits and the rug is where the kids play, so we clean them with eco-friendly products and leave your home cleaner, fresher and healthier than we found it.</p>
       <p class="owner"><b>Vincent Morea</b><span>Owner / Operator</span></p>
     </div>
     <ul class="claims">
@@ -322,10 +322,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <h3>Floors</h3>
         <ul class="rows">
           <li><a class="row" data-pick="Hardwood" href="#ask">Hardwood floor cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-          <li><a class="row" data-pick="Hardwood" href="#ask">Screen &amp; recoat<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-          <li><a class="row" data-pick="Hardwood" href="#ask">Refinishing &amp; custom staining<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Hardwood" data-note="Screen &amp; recoat." href="#ask">Screen &amp; recoat<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Hardwood" data-note="Refinishing / custom staining." href="#ask">Refinishing &amp; custom staining<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
           <li><a class="row" data-pick="Tile &amp; grout" href="#ask">Tile &amp; grout cleaning &amp; sealing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
-          <li><a class="row" data-pick="Basement or garage" href="#ask"><span>Basement &amp; garage floors<small>Cleaning, sealing, painting</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-pick="Basement or garage" data-note="Basement/garage floor: cleaning, sealing or painting?" href="#ask"><span>Basement &amp; garage floors<small>Cleaning, sealing, painting</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
         </ul>
       </div>
       <div class="group rise">
@@ -342,9 +342,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <h2 id="h-how" class="rise">How it works</h2>
     <ol class="steps">
-      <li class="rise"><div><b>Text or call what needs cleaning.</b><span>A photo and your town help.</span></div></li>
+      <li class="rise"><div><b>Text or call us.</b><span>Tell us what needs cleaning and your town.</span></div></li>
       <li class="rise"><div><b>Get your quote.</b><span>Straight from Vincent, the owner.</span></div></li>
-      <li class="rise"><div><b>We come to you and clean it.</b><span>Carpet, couch, tile or hardwood, right in your home.</span></div></li>
+      <li class="rise"><div><b>We clean it.</b><span>Carpet, couch, tile, hardwood, or your business.</span></div></li>
     </ol>
   </div>
 </section>
@@ -360,22 +360,22 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <fieldset class="field" id="f-what">
         <legend>What needs cleaning?</legend>
         <div class="chips">
-          <input type="checkbox" name="what" id="c1" value="Carpet &amp; rugs"><label for="c1">Carpet &amp; rugs</label>
-          <input type="checkbox" name="what" id="c2" value="Upholstery"><label for="c2">Upholstery</label>
-          <input type="checkbox" name="what" id="c3" value="Hardwood"><label for="c3">Hardwood</label>
-          <input type="checkbox" name="what" id="c4" value="Tile &amp; grout"><label for="c4">Tile &amp; grout</label>
-          <input type="checkbox" name="what" id="c5" value="Basement or garage"><label for="c5">Basement or garage</label>
-          <input type="checkbox" name="what" id="c6" value="Outdoor cushions"><label for="c6">Outdoor cushions</label>
-          <input type="checkbox" name="what" id="c7" value="Car seats &amp; strollers"><label for="c7">Car seats &amp; strollers</label>
-          <input type="checkbox" name="what" id="c8" value="Gym mats"><label for="c8">Gym mats</label>
-          <input type="checkbox" name="what" id="c9" value="Commercial"><label for="c9">Commercial</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c1" value="Carpet &amp; rugs"><label for="c1">Carpet &amp; rugs</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c2" value="Upholstery"><label for="c2">Upholstery</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c3" value="Hardwood"><label for="c3">Hardwood</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c4" value="Tile &amp; grout"><label for="c4">Tile &amp; grout</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c5" value="Basement or garage"><label for="c5">Basement or garage</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c6" value="Outdoor cushions"><label for="c6">Outdoor cushions</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c7" value="Car seats &amp; strollers"><label for="c7">Car seats &amp; strollers</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c8" value="Gym mats"><label for="c8">Gym mats</label>
+          <input type="checkbox" aria-describedby="e-what" name="what" id="c9" value="Commercial"><label for="c9">Commercial</label>
         </div>
-        <p class="err" id="e-what">Pick what needs cleaning, or tell us below.</p>
+        <p class="err" id="e-what" role="alert">Pick what needs cleaning, or tell us below.</p>
       </fieldset>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
         <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
-        <p class="err" id="e-name">Add your name so Vincent knows who's texting.</p>
+        <p class="err" id="e-name" role="alert">Add your name so Vincent knows who's texting.</p>
       </div>
       <div class="field">
         <label for="where">Your town <small>(optional)</small></label>
@@ -454,6 +454,9 @@ document.documentElement.classList.add('js');
     a.addEventListener('click',function(){
       var box=document.querySelector('#quoteForm input[name=what][value="'+a.getAttribute('data-pick')+'"]');
       if(box){box.checked=true;document.getElementById('f-what').classList.remove('bad')}
+      // rows that share a chip (screen & recoat, refinishing) name themselves in the note so Vincent knows which job
+      var note=a.getAttribute('data-note'),more=document.getElementById('more');
+      if(note&&more.value.indexOf(note)<0)more.value=(more.value?more.value+' ':'')+note;
     });
   });
 })();
@@ -483,14 +486,15 @@ document.documentElement.classList.add('js');
   });
 })();
 
-/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+/* ===== Floating text circle: shows after the hero, hides while the form or the closing contacts are on screen ===== */
 (function(){
   var fl=document.getElementById('float');if(!fl)return;
   if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
-  var pastHero=false,formIn=false;
-  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  var pastHero=false,formIn=false,closeIn=false;
+  function sync(){var on=pastHero&&!formIn&&!closeIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
   new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
   new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
+  new IntersectionObserver(function(es){closeIn=es[0].isIntersecting;sync()}).observe(document.getElementById('close'));
   sync();
 })();
 

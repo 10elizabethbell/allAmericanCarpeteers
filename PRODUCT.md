@@ -61,5 +61,5 @@ no reviews exist anywhere.
 ## Principles
 1. Phone first: the first phone screen says who, what, where and how to reach Vincent.
 2. Only true things: no invented prices, reviews, years, towns or credentials.
-3. Texting is the main door; the phone number sits top-right.
-4. The page should feel like a clean carpet under your hand.
+3. Texting is the main door (quote form composes a text); the phone number sits top-right.
+4. Calm and orderly (the house calm band style since 2026-10-19): paper and navy bands, one red accent, nothing to figure out.

@@ -122,6 +122,15 @@
         ],
         "createdAt": "2026-10-19T23:34:04.041Z",
         "reason": "agent decision (both Impeccable reviewers agreed): cream #f6f1e7 is the room's wall in the carpet-room hero; the value-keyed ignore didn't match this rule"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T02:34:33.179Z",
+        "reason": "Ellie's house rule (calm-photo-style.md item 2, 2026-10-19): faint 135deg band texture on deep-navy bands is required"
       }
     ]
   }
